@@ -23,6 +23,42 @@
   "https://www.bizalia.com/en-venta/111086/plataforma-italiana-consolidada-de-formacion-sanitaria-y-simulacion-medica-busca-socio-estrategico-para-impulsar-su-crecimiento": {
    "reason": "extranjero",
    "date": "2026-09-30"
+  },
+  "https://www.negociosenventa.es/financiacion-y-inversion-de-proyectos-en-almeria-2928": {
+   "reason": "busqueda",
+   "date": "2026-09-30"
+  },
+  "https://www.bizalia.com/en-venta/109638/informacion-sobre-el-mercado-de-valores-y-consejos-para-operar-sitio-web": {
+   "reason": "extranjero",
+   "date": "2026-09-30"
+  },
+  "https://www.bizalia.com/en-venta/109572/en-venta-area-de-recreacion-actividades-y-eventos-con-catering-arrendado-con-una-vista-inigualable": {
+   "reason": "extranjero",
+   "date": "2026-09-30"
+  },
+  "https://www.bizalia.com/en-venta/108790/inversion-en-un-negocio-de-comercio-electronico-unico-y-solido-con-alta-rentabilidad": {
+   "reason": "extranjero",
+   "date": "2026-09-30"
+  },
+  "https://www.bizalia.com/en-venta/108795/marca-innovadora-de-accesorios-de-moda-en-venta-exito-internacional-y-sostenibilidad": {
+   "reason": "extranjero",
+   "date": "2026-09-30"
+  },
+  "https://www.bizalia.com/en-venta/110317/empresa-en-el-ambito-de-la-salud-fisica-el-estilo-de-vida-y-el-acompanamiento-digital": {
+   "reason": "extranjero",
+   "date": "2026-09-30"
+  },
+  "https://www.bizalia.com/en-venta/110080/consultoria-especializada-en-fusiones-y-adquisiciones-en-pymes-busca-socio": {
+   "reason": "busqueda",
+   "date": "2026-09-30"
+  },
+  "https://www.bizalia.com/en-venta/110276/empresa-internacional-de-ocio-y-experiencias": {
+   "reason": "extranjero",
+   "date": "2026-09-30"
+  },
+  "https://www.bizalia.com/en-venta/110876/especialista-con-un-modelo-asset-light-en-construccion-y-rehabilitacion-de-edificios-principalmente-clinicas-margen-ebit-superior-al-30-noroeste-de-alemania": {
+   "reason": "extranjero",
+   "date": "2026-09-30"
   }
  },
  "runs": [
@@ -42,6 +78,35 @@
      "nuevos": 25,
      "duplicados": 0,
      "descartados": 5,
+     "errores": 0,
+     "retirados": 0
+    },
+    {
+     "source": "transmisionempresas",
+     "nuevos": 40,
+     "duplicados": 0,
+     "descartados": 0,
+     "errores": 0,
+     "retirados": 0
+    }
+   ]
+  },
+  {
+   "at": "2026-09-30T22:27:05+00:00",
+   "stats": [
+    {
+     "source": "negociosenventa",
+     "nuevos": 59,
+     "duplicados": 0,
+     "descartados": 1,
+     "errores": 0,
+     "retirados": 0
+    },
+    {
+     "source": "bizalia",
+     "nuevos": 22,
+     "duplicados": 0,
+     "descartados": 8,
      "errores": 0,
      "retirados": 0
     },
