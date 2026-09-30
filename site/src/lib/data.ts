@@ -95,3 +95,27 @@ export function statsBy(key: "sector" | "provincia") {
     }))
     .sort((a, b) => b.count - a.count);
 }
+
+/** Fila compacta para el explorador (mismo formato que /listings-index.json). */
+export const toRow = (l: Listing) => ({
+  s: l.slug, t: l.title, k: l.tipo, c: l.sector, p: l.provincia ?? "", u: l.ubicacion ?? "",
+  e: l.precio ?? 0, m: l.precio_max ?? 0,
+  y: (l.summary ?? "").length > 180 ? l.summary.slice(0, 177).trimEnd() + "…" : l.summary ?? "",
+  o: l.source_name, f: l.first_seen,
+});
+
+/** Muestra aleatoria (se usa en el build para el HTML inicial). */
+export function sample<T>(arr: T[], n: number): T[] {
+  const a = arr.slice();
+  for (let i = a.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [a[i], a[j]] = [a[j], a[i]];
+  }
+  return a.slice(0, n);
+}
+
+export const SECTOR_ICON: Record<string, string> = {
+  online: "💻", hosteleria: "☕", alojamiento: "🛏️", estetica: "💇", salud: "🩺", alimentacion: "🥖",
+  educacion: "🎓", "deporte-ocio": "🏋️", comercio: "🛍️", transporte: "🚚", servicios: "🧰",
+  industria: "🏭", otros: "📦",
+};

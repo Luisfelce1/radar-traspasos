@@ -1,50 +1,81 @@
 ---
 import Base from "../layouts/Base.astro";
-import ListingCard from "../components/ListingCard.astro";
 import AdSlot from "../components/AdSlot.astro";
-import { active, byKey, provincias, SECTORES } from "../lib/data";
+import { ExplorerComponent } from "../components/ng/explorer.component";
+import { active, byKey, provincias, sample, SECTORES, SECTOR_ICON, toRow } from "../lib/data";
 import { SITE_NAME, SITE_TAGLINE } from "../lib/site";
 
-const latest = active.slice(0, 24);
 const sectores = [...byKey("sector").entries()].sort((a, b) => b[1].length - a[1].length);
+const initial = sample(active, 24).map(toRow);
+const traspasos = active.filter((l) => l.tipo === "traspaso").length;
+const stats = [
+  { n: active.length, l: "negocios activos" },
+  { n: traspasos, l: "traspasos" },
+  { n: provincias.length, l: "provincias" },
+];
 ---
 <Base title={SITE_NAME} description={SITE_TAGLINE}>
-  <h1>Negocios en traspaso y venta en España</h1>
-  <p class="muted">{active.length.toLocaleString("es-ES")} anuncios activos de varios portales, actualizados varias veces al día.</p>
-
-  <form action="/buscar/" method="get" class="search">
-    <input name="q" placeholder="Busca: cafetería Valencia, peluquería, franquicia…" aria-label="Buscar" />
-    <button class="btn" type="submit">Buscar</button>
-  </form>
+  <section class="relative -mx-4 -mt-8 mb-10 px-4 pb-10 pt-12 sm:-mt-10 sm:pt-16">
+    <div aria-hidden="true" class="pointer-events-none absolute inset-y-0 left-1/2 -z-10 w-screen -translate-x-1/2 [mask-image:linear-gradient(to_bottom,black_40%,transparent)] bg-[radial-gradient(60%_60%_at_20%_0%,color-mix(in_oklch,var(--primary)_18%,transparent),transparent_70%),radial-gradient(40%_50%_at_90%_10%,color-mix(in_oklch,var(--info)_12%,transparent),transparent_70%)]"></div>
+    <p class="mb-4 inline-flex items-center gap-2 rounded-full border border-border bg-surface px-3 py-1 text-xs font-medium text-muted-foreground shadow-sm">
+      <span class="size-2 animate-pulse rounded-full bg-success"></span> Actualizado varias veces al día
+    </p>
+    <h1 class="max-w-3xl text-balance text-4xl font-semibold tracking-tight sm:text-5xl">
+      Encuentra tu próximo negocio <span class="text-primary">en traspaso</span>
+    </h1>
+    <p class="mt-4 max-w-2xl text-lg text-muted-foreground">
+      Reunimos los anuncios de varios portales en un solo sitio, sin duplicados y con un resumen claro de cada uno.
+    </p>
+    <dl class="mt-8 flex flex-wrap gap-x-10 gap-y-4">
+      {stats.map((s) => (
+        <div>
+          <dt class="text-sm text-muted-foreground">{s.l}</dt>
+          <dd class="text-3xl font-semibold tabular-nums tracking-tight">{s.n.toLocaleString("es-ES")}</dd>
+        </div>
+      ))}
+    </dl>
+  </section>
 
   {sectores.length > 0 && (
-    <>
-      <h2>Por sector</h2>
-      <ul class="chips">
-        {sectores.map(([s, items]) => <li><a href={`/traspasos/${s}/`}>{SECTORES[s] ?? s} ({items.length})</a></li>)}
+    <section class="mb-10" aria-labelledby="h-sectores">
+      <h2 id="h-sectores" class="mb-4 text-lg font-semibold tracking-tight">Explora por sector</h2>
+      <ul class="grid list-none grid-cols-2 gap-2 p-0 sm:grid-cols-3 lg:grid-cols-4">
+        {sectores.map(([s, items]) => (
+          <li>
+            <a href={`/traspasos/${s}/`}
+               class="flex items-center gap-3 rounded-xl border border-border bg-surface p-3 text-sm shadow-sm transition hover:-translate-y-0.5 hover:border-primary/40 hover:shadow-md">
+              <span aria-hidden="true" class="grid size-9 shrink-0 place-items-center rounded-lg bg-muted text-lg">{SECTOR_ICON[s] ?? "📦"}</span>
+              <span class="min-w-0">
+                <span class="block truncate font-medium">{SECTORES[s] ?? s}</span>
+                <span class="text-xs text-muted-foreground">{items.length} anuncios</span>
+              </span>
+            </a>
+          </li>
+        ))}
       </ul>
-    </>
-  )}
-  {provincias.length > 0 && (
-    <>
-      <h2>Por provincia</h2>
-      <ul class="chips">
-        {provincias.map(([slug, name]) => <li><a href={`/provincia/${slug}/`}>{name}</a></li>)}
-      </ul>
-    </>
+    </section>
   )}
 
   <AdSlot />
 
-  <h2>Últimos anuncios</h2>
-  {latest.length ? (
-    <div class="grid">{latest.map((l) => <ListingCard l={l} />)}</div>
-  ) : (
-    <p class="muted">Aún no hay anuncios. El robot los añadirá en su próxima ejecución.</p>
+  <section aria-labelledby="h-anuncios">
+    <div class="mb-4 flex items-end justify-between gap-4">
+      <div>
+        <h2 id="h-anuncios" class="text-lg font-semibold tracking-tight">Todos los negocios</h2>
+        <p class="text-sm text-muted-foreground">En orden aleatorio: cada visita descubres anuncios distintos.</p>
+      </div>
+    </div>
+    <ExplorerComponent client:load initial={initial} provinciaOptions={provincias} />
+  </section>
+
+  {provincias.length > 0 && (
+    <section class="mt-14" aria-labelledby="h-prov">
+      <h2 id="h-prov" class="mb-4 text-lg font-semibold tracking-tight">Negocios por provincia</h2>
+      <ul class="flex list-none flex-wrap gap-2 p-0">
+        {provincias.map(([slug, name]) => (
+          <li><a href={`/provincia/${slug}/`} class="inline-block rounded-full border border-border bg-surface px-3 py-1.5 text-sm transition hover:border-primary/40 hover:text-primary">{name}</a></li>
+        ))}
+      </ul>
+    </section>
   )}
 </Base>
-
-<style>
-  .search { display: flex; gap: 8px; margin: 18px 0 8px; max-width: 640px; }
-  .search .btn { border: 0; cursor: pointer; white-space: nowrap; }
-</style>

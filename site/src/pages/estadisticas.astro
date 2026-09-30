@@ -1,42 +1,24 @@
 ---
 import Base from "../layouts/Base.astro";
 import AdSlot from "../components/AdSlot.astro";
+import PageHeader from "../components/PageHeader.astro";
+import { StatsTableComponent } from "../components/ng/stats-table.component";
 import { active, eur, statsBy } from "../lib/data";
 
-const porSector = statsBy("sector");
-const porProvincia = statsBy("provincia");
+const toRows = (key: "sector" | "provincia") =>
+  statsBy(key).map((r) => ({
+    href: key === "sector" ? `/traspasos/${r.key}/` : `/provincia/${r.key}/`,
+    label: r.label, count: r.count, traspasos: r.traspasos, median: eur(r.medianPrice) ?? "",
+  }));
 const hoy = new Date().toLocaleDateString("es-ES", { day: "numeric", month: "long", year: "numeric" });
 ---
 <Base title="Precios de traspasos por sector y provincia"
       description="Cuánto cuesta traspasar un negocio en España: precio mediano por sector y por provincia, calculado con los anuncios activos.">
-  <h1>Precios de traspasos en España</h1>
-  <p class="muted">Calculado con {active.length.toLocaleString("es-ES")} anuncios activos · actualizado el {hoy}. Usamos la mediana (el valor central), que no se deja arrastrar por anuncios con precios extremos. Solo cuentan los anuncios con precio publicado.</p>
-
-  <h2>Por sector</h2>
-  <div class="table-scroll">
-    <table>
-      <thead><tr><th>Sector</th><th class="num">Anuncios</th><th class="num">Traspasos</th><th class="num">Precio mediano</th></tr></thead>
-      <tbody>
-        {porSector.map((r) => (
-          <tr><td><a href={`/traspasos/${r.key}/`}>{r.label}</a></td><td class="num">{r.count}</td>
-              <td class="num">{r.traspasos}</td><td class="num">{eur(r.medianPrice) ?? "—"}</td></tr>
-        ))}
-      </tbody>
-    </table>
-  </div>
-
+  <PageHeader crumbs={[{ label: "Inicio", href: "/" }, { label: "Precios" }]} icon="📊" title="Precios de traspasos en España"
+              subtitle={`Calculado con ${active.length.toLocaleString("es-ES")} anuncios activos · actualizado el ${hoy}. Usamos la mediana (el valor central), que no se deja arrastrar por precios extremos. Solo cuentan los anuncios con precio publicado.`} />
+  <h2 class="mb-3 mt-8 text-lg font-semibold tracking-tight">Por sector</h2>
+  <StatsTableComponent label="Sector" rows={toRows("sector")} />
   <AdSlot />
-
-  <h2>Por provincia</h2>
-  <div class="table-scroll">
-    <table>
-      <thead><tr><th>Provincia</th><th class="num">Anuncios</th><th class="num">Traspasos</th><th class="num">Precio mediano</th></tr></thead>
-      <tbody>
-        {porProvincia.map((r) => (
-          <tr><td><a href={`/provincia/${r.key}/`}>{r.label}</a></td><td class="num">{r.count}</td>
-              <td class="num">{r.traspasos}</td><td class="num">{eur(r.medianPrice) ?? "—"}</td></tr>
-        ))}
-      </tbody>
-    </table>
-  </div>
+  <h2 class="mb-3 mt-10 text-lg font-semibold tracking-tight">Por provincia</h2>
+  <StatsTableComponent label="Provincia" rows={toRows("provincia")} />
 </Base>

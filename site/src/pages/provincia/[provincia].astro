@@ -1,14 +1,12 @@
 ---
 import Base from "../../layouts/Base.astro";
-import ListingCard from "../../components/ListingCard.astro";
 import AdSlot from "../../components/AdSlot.astro";
-import { byKey, eur, median, SECTORES, type Listing } from "../../lib/data";
+import PageHeader from "../../components/PageHeader.astro";
+import { ExplorerComponent } from "../../components/ng/explorer.component";
+import { byKey, eur, median, provincias, sample, SECTORES, SECTOR_ICON, toRow, type Listing } from "../../lib/data";
 
 export function getStaticPaths() {
-  return [...byKey("provincia").entries()].map(([provincia, items]) => ({
-    params: { provincia },
-    props: { provincia, items },
-  }));
+  return [...byKey("provincia").entries()].map(([provincia, items]) => ({ params: { provincia }, props: { provincia, items } }));
 }
 const { provincia, items } = Astro.props as { provincia: string; items: Listing[] };
 const lugar = items[0].ubicacion;
@@ -18,13 +16,15 @@ for (const i of items) secs.set(i.sector, (secs.get(i.sector) ?? 0) + 1);
 ---
 <Base title={`Negocios en traspaso en ${lugar}`}
       description={`${items.length} negocios en traspaso y venta en ${lugar}.${med ? ` Precio mediano ${eur(med)}.` : ""}`}>
-  <p class="muted"><a href="/">Inicio</a> › {lugar}</p>
-  <h1>Negocios en traspaso en {lugar}</h1>
-  <p class="muted">{items.length} anuncios activos{med ? <> · precio mediano {eur(med)}</> : null}</p>
-  <ul class="chips">
-    {[...secs.entries()].sort((a, b) => b[1] - a[1]).map(([s, n]) =>
-      <li><a href={`/traspasos/${s}/${provincia}/`}>{SECTORES[s] ?? s} ({n})</a></li>)}
-  </ul>
+  <PageHeader crumbs={[{ label: "Inicio", href: "/" }, { label: lugar ?? provincia }]} icon="📍"
+              title={`Negocios en traspaso en ${lugar}`}
+              subtitle={`<strong class="text-foreground">${items.length}</strong> anuncios activos${med ? ` · precio mediano <strong class="text-foreground">${eur(med)}</strong>` : ""}`}>
+    <ul class="mt-4 flex list-none flex-wrap gap-2 p-0">
+      {[...secs.entries()].sort((a, b) => b[1] - a[1]).map(([s, n]) => (
+        <li><a href={`/traspasos/${s}/${provincia}/`} class="inline-flex items-center gap-1.5 rounded-full border border-border bg-surface px-3 py-1 text-sm transition hover:border-primary/40 hover:text-primary">{SECTOR_ICON[s]} {SECTORES[s] ?? s} <span class="text-muted-foreground">{n}</span></a></li>
+      ))}
+    </ul>
+  </PageHeader>
   <AdSlot />
-  <div class="grid">{items.map((l) => <ListingCard l={l} />)}</div>
+  <ExplorerComponent client:load preset={{ provincia }} initial={sample(items, 24).map(toRow)} provinciaOptions={provincias} />
 </Base>
