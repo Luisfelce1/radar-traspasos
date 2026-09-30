@@ -1,0 +1,86 @@
+---
+import Base from "../../layouts/Base.astro";
+import AdSlot from "../../components/AdSlot.astro";
+import ListingCard from "../../components/ListingCard.astro";
+import { all, active, eur, priceLabel, SECTORES, tipoLabel, type Listing } from "../../lib/data";
+
+export function getStaticPaths() {
+  return all.map((l) => ({ params: { slug: l.slug }, props: { l } }));
+}
+const { l } = Astro.props as { l: Listing };
+const sector = SECTORES[l.sector] ?? "Negocio";
+const retirado = l.status === "retirado";
+const related = active
+  .filter((x) => x.id !== l.id && x.sector === l.sector && (x.provincia === l.provincia || !l.provincia))
+  .slice(0, 6);
+const rows: [string, string | null][] = [
+  ["Operación", tipoLabel(l.tipo)],
+  ["Sector", sector],
+  ["Ubicación", l.municipio && l.municipio !== l.ubicacion ? `${l.municipio} (${l.ubicacion})` : l.ubicacion],
+  ["Precio", priceLabel(l)],
+  ["Facturación", eur(l.facturacion)],
+  ["Alquiler mensual", eur(l.alquiler_mensual)],
+  ["Superficie", l.superficie ? `${l.superficie} m²` : null],
+  ["Empleados", l.empleados],
+  ["Publicado en origen", l.published],
+  ["Visto por primera vez", l.first_seen],
+];
+const desc = `${tipoLabel(l.tipo)} de ${sector.toLowerCase()}${l.ubicacion ? ` en ${l.ubicacion}` : ""}. ${priceLabel(l)}. ${l.summary}`.slice(0, 158);
+---
+<Base title={l.title} description={desc} noindex={retirado}>
+  <p class="crumbs">
+    <a href="/">Inicio</a> › <a href={`/traspasos/${l.sector}/`}>{sector}</a>
+    {l.provincia && <> › <a href={`/traspasos/${l.sector}/${l.provincia}/`}>{l.ubicacion}</a></>}
+  </p>
+
+  {retirado && <p class="retired">Este anuncio ya no está disponible en el portal de origen (retirado el {l.retired_on}).</p>}
+
+  <h1>{l.title}</h1>
+  <p class="price">{priceLabel(l)}</p>
+
+  <div class="layout">
+    <section>
+      <h2>Resumen</h2>
+      <p>{l.summary}</p>
+      {!retirado && (
+        <p>
+          <a class="btn" href={l.url} target="_blank" rel="nofollow noopener">Ver anuncio completo en {l.source_name} ↗</a>
+        </p>
+      )}
+      {l.also_on?.length ? (
+        <p class="muted">También publicado en:
+          {l.also_on.map((u, i) => <> <a href={u} target="_blank" rel="nofollow noopener">{l.also_on_names?.[i] ?? "otro portal"}</a></>)}
+        </p>
+      ) : null}
+      <p class="muted small">Resumen propio elaborado a partir de los datos públicos del anuncio. Fotos, descripción completa y contacto del anunciante están en el portal de origen.</p>
+    </section>
+    <aside>
+      <table>
+        <tbody>
+          {rows.filter(([, v]) => v).map(([k, v]) => <tr><th>{k}</th><td>{v}</td></tr>)}
+        </tbody>
+      </table>
+    </aside>
+  </div>
+
+  <AdSlot />
+
+  {related.length > 0 && (
+    <>
+      <h2>Otros negocios de {sector.toLowerCase()}{l.ubicacion ? ` en ${l.ubicacion}` : ""}</h2>
+      <div class="grid">{related.map((x) => <ListingCard l={x} />)}</div>
+    </>
+  )}
+</Base>
+
+<style>
+  .crumbs { font-size: .85rem; color: var(--muted); }
+  .crumbs a { color: var(--muted); }
+  .price { font-size: 1.35rem; font-weight: 700; margin: 0 0 8px; }
+  .layout { display: grid; grid-template-columns: 1.4fr 1fr; gap: 28px; align-items: start; }
+  @media (max-width: 760px) { .layout { grid-template-columns: 1fr; } }
+  aside table { border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; }
+  aside th { width: 45%; }
+  .retired { background: var(--warn-soft); color: var(--warn); padding: 10px 14px; border-radius: var(--radius); }
+  .small { font-size: .82rem; }
+</style>

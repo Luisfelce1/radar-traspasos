@@ -1,0 +1,13 @@
+<!doctype html><html><body>
+<form onsubmit="return false"><input name="texto"><button type="button" id="b">Buscar</button></form>
+<div id="res"></div><ul class="pagination" id="pag"></ul>
+<script>
+const pages = [["8DiscnAk334%3D","XSeQdrg1fBE%3D"],["29zlrYBrIx4%3D"]];
+function show(i){
+  setTimeout(()=>{
+    document.getElementById('res').innerHTML = pages[i].map(id=>`<a href="/Portal/Anuncio/Index/${id}">Anuncio ${id}</a>`).join('<br>');
+    document.getElementById('pag').innerHTML = i+1<pages.length ? `<li><a href="#" onclick="show(${i+1});return false">Siguiente</a></li>` : '';
+  }, 150);
+}
+document.getElementById('b').onclick = ()=>show(0);
+</script></body></html>

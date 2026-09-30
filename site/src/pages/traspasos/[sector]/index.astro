@@ -1,0 +1,36 @@
+---
+import Base from "../../../layouts/Base.astro";
+import ListingCard from "../../../components/ListingCard.astro";
+import AdSlot from "../../../components/AdSlot.astro";
+import { byKey, eur, median, SECTORES, type Listing } from "../../../lib/data";
+
+export function getStaticPaths() {
+  return [...byKey("sector").entries()].map(([sector, items]) => ({
+    params: { sector },
+    props: { sector, items },
+  }));
+}
+const { sector, items } = Astro.props as { sector: string; items: Listing[] };
+const name = SECTORES[sector] ?? sector;
+const med = median(items.map((i) => i.precio ?? 0));
+const provs = new Map<string, { name: string; n: number }>();
+for (const i of items) if (i.provincia && i.ubicacion) {
+  const p = provs.get(i.provincia) ?? { name: i.ubicacion, n: 0 };
+  p.n++; provs.set(i.provincia, p);
+}
+const provList = [...provs.entries()].sort((a, b) => b[1].n - a[1].n);
+---
+<Base title={`Traspasos de ${name.toLowerCase()} en España`}
+      description={`${items.length} negocios de ${name.toLowerCase()} en traspaso y venta en España.${med ? ` Precio mediano: ${eur(med)}.` : ""}`}>
+  <p class="muted"><a href="/">Inicio</a> › {name}</p>
+  <h1>Traspasos de {name.toLowerCase()} en España</h1>
+  <p class="muted">{items.length} anuncios activos{med ? <> · precio mediano {eur(med)}</> : null}</p>
+
+  {provList.length > 0 && (
+    <ul class="chips">
+      {provList.map(([slug, p]) => <li><a href={`/traspasos/${sector}/${slug}/`}>{p.name} ({p.n})</a></li>)}
+    </ul>
+  )}
+  <AdSlot />
+  <div class="grid">{items.map((l) => <ListingCard l={l} />)}</div>
+</Base>

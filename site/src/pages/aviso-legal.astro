@@ -1,0 +1,16 @@
+---
+import Base from "../layouts/Base.astro";
+import { SITE_NAME, CONTACT_EMAIL } from "../lib/site";
+---
+<Base title="Aviso legal">
+  <article class="prose">
+    <h1>Aviso legal</h1>
+    <p><strong>Titular:</strong> [TU NOMBRE O RAZÓN SOCIAL] · NIF [TU NIF] · [TU DIRECCIÓN] · <a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a></p>
+    <h2>Qué es {SITE_NAME}</h2>
+    <p>{SITE_NAME} es un buscador que localiza anuncios públicos de negocios en venta y traspaso publicados en otros portales, muestra un resumen propio con los datos básicos y enlaza al anuncio original. No somos parte en ninguna operación ni intermediamos entre comprador y vendedor.</p>
+    <h2>Exactitud de la información</h2>
+    <p>Los datos proceden de los portales de origen y pueden cambiar o contener errores. Consulta siempre el anuncio original antes de tomar decisiones.</p>
+    <h2>Propiedad intelectual</h2>
+    <p>No reproducimos las descripciones ni las fotografías de los anuncios. Las marcas y contenidos de los portales enlazados pertenecen a sus titulares. Si eres titular de un anuncio o de un portal y quieres que lo retiremos, <a href="/retirar-anuncio/">escríbenos</a>.</p>
+  </article>
+</Base>

@@ -1,0 +1,17 @@
+---
+import Base from "../layouts/Base.astro";
+import { SITE_NAME, CONTACT_EMAIL } from "../lib/site";
+---
+<Base title="Sobre nuestro robot" noindex>
+  <article class="prose">
+    <h1>TraspasosBot</h1>
+    <p>TraspasosBot es el rastreador de {SITE_NAME}. Visita páginas públicas de anuncios de negocios en venta varias veces al día para mantener actualizado el buscador.</p>
+    <ul>
+      <li>Respeta robots.txt y su directiva Crawl-delay.</li>
+      <li>Deja al menos 3 segundos entre peticiones a un mismo sitio.</li>
+      <li>Solo descarga fichas nuevas y comprueba si las antiguas siguen activas.</li>
+      <li>Guarda únicamente título, sector, ubicación, precio y facturación, y enlaza siempre al original.</li>
+    </ul>
+    <p>Para bloquearlo: <code>User-agent: TraspasosBot</code> / <code>Disallow: /</code>. Contacto: <a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a>.</p>
+  </article>
+</Base>

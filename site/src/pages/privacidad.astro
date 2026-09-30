@@ -1,0 +1,18 @@
+---
+import Base from "../layouts/Base.astro";
+import { SITE_NAME, CONTACT_EMAIL, ADSENSE_CLIENT } from "../lib/site";
+---
+<Base title="Privacidad y cookies">
+  <article class="prose">
+    <h1>Política de privacidad y cookies</h1>
+    <p>{SITE_NAME} no pide registro ni recoge datos personales de sus visitantes. Responsable: [TU NOMBRE] · <a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a>.</p>
+    <h2>Cookies</h2>
+    {ADSENSE_CLIENT ? (
+      <p>Usamos Google AdSense para mostrar publicidad. Google y sus socios pueden usar cookies para mostrar anuncios basados en visitas previas a este u otros sitios. Puedes desactivar la publicidad personalizada en la <a href="https://adssettings.google.com" rel="nofollow">configuración de anuncios de Google</a>. Al activar AdSense en el Espacio Económico Europeo es obligatorio mostrar un banner de consentimiento certificado (Google ofrece uno gratuito en el panel de AdSense, sección Privacidad y mensajes).</p>
+    ) : (
+      <p>Este sitio no utiliza cookies propias ni de terceros.</p>
+    )}
+    <h2>Datos de los anuncios</h2>
+    <p>Los anuncios que mostramos son públicos en sus portales de origen. No mostramos datos de contacto de los anunciantes. Para solicitar la retirada de un anuncio, usa la página <a href="/retirar-anuncio/">Retirar un anuncio</a>.</p>
+  </article>
+</Base>

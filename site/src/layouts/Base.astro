@@ -1,0 +1,103 @@
+---
+import { SITE_NAME, SITE_TAGLINE, ADSENSE_CLIENT, CONTACT_EMAIL } from "../lib/site";
+
+interface Props {
+  title: string;
+  description?: string;
+  noindex?: boolean;
+  jsonld?: object;
+}
+const { title, description = SITE_TAGLINE, noindex = false, jsonld } = Astro.props;
+const canonical = new URL(Astro.url.pathname, Astro.site);
+const fullTitle = title === SITE_NAME ? title : `${title} | ${SITE_NAME}`;
+---
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{fullTitle}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonical} />
+    {noindex && <meta name="robots" content="noindex, follow" />}
+    <meta property="og:title" content={fullTitle} />
+    <meta property="og:description" content={description} />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={canonical} />
+    <link rel="sitemap" href="/sitemap-index.xml" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    {jsonld && <script type="application/ld+json" set:html={JSON.stringify(jsonld)} />}
+    {ADSENSE_CLIENT && (
+      <script async src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${ADSENSE_CLIENT}`} crossorigin="anonymous"></script>
+    )}
+  </head>
+  <body>
+    <header class="top">
+      <div class="wrap bar">
+        <a href="/" class="brand">{SITE_NAME}</a>
+        <nav>
+          <a href="/buscar/">Buscar</a>
+          <a href="/estadisticas/">Precios</a>
+          <a href="/guias/como-hacer-un-traspaso/">Guía</a>
+        </nav>
+      </div>
+    </header>
+    <main class="wrap"><slot /></main>
+    <footer class="foot">
+      <div class="wrap">
+        <p>{SITE_NAME} es un buscador: resume y enlaza anuncios publicados en otros portales. La información completa y el contacto están siempre en el anuncio original.</p>
+        <p>
+          <a href="/aviso-legal/">Aviso legal</a>{" · "}<a href="/privacidad/">Privacidad y cookies</a>{" · "}<a href="/retirar-anuncio/">Retirar un anuncio</a>{" · "}<a href={`mailto:${CONTACT_EMAIL}`}>Contacto</a>
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
+
+<style is:global>
+  :root {
+    --bg: #fbfaf7; --surface: #ffffff; --text: #1d1d1b; --muted: #6b6a66; --line: #e6e3dc;
+    --accent: #0f6b4f; --accent-soft: #e3f1ec; --warn: #9a3b12; --warn-soft: #fbeae2;
+    --radius: 10px; --font: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #121412; --surface: #1b1e1b; --text: #ecebe6; --muted: #a09f99; --line: #2c302c;
+      --accent: #5fc79f; --accent-soft: #1c3129; --warn: #f19a72; --warn-soft: #3a2219;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #121412; --surface: #1b1e1b; --text: #ecebe6; --muted: #a09f99; --line: #2c302c;
+    --accent: #5fc79f; --accent-soft: #1c3129; --warn: #f19a72; --warn-soft: #3a2219;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--text); font: 16px/1.55 var(--font); }
+  a { color: var(--accent); }
+  .wrap { max-width: 1080px; margin: 0 auto; padding: 0 16px; }
+  .top { border-bottom: 1px solid var(--line); background: var(--surface); }
+  .bar { display: flex; align-items: center; justify-content: space-between; min-height: 56px; gap: 12px; flex-wrap: wrap; }
+  .brand { font-weight: 700; text-decoration: none; color: var(--text); letter-spacing: -0.01em; }
+  nav { display: flex; gap: 16px; }
+  nav a { text-decoration: none; color: var(--muted); }
+  nav a:hover { color: var(--text); }
+  main { padding: 24px 16px 48px; }
+  h1 { font-size: clamp(1.5rem, 3vw, 2.1rem); line-height: 1.2; letter-spacing: -0.02em; margin: 8px 0 12px; }
+  h2 { font-size: 1.2rem; margin-top: 32px; }
+  .muted { color: var(--muted); }
+  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(290px, 1fr)); gap: 14px; }
+  .chips { display: flex; flex-wrap: wrap; gap: 8px; padding: 0; list-style: none; }
+  .chips a { display: inline-block; padding: 5px 11px; border: 1px solid var(--line); border-radius: 999px;
+             text-decoration: none; color: var(--text); background: var(--surface); font-size: .9rem; }
+  .chips a:hover { border-color: var(--accent); }
+  table { width: 100%; border-collapse: collapse; background: var(--surface); }
+  th, td { text-align: left; padding: 8px 10px; border-bottom: 1px solid var(--line); font-size: .95rem; }
+  th { color: var(--muted); font-weight: 600; }
+  td.num, th.num { text-align: right; font-variant-numeric: tabular-nums; }
+  .table-scroll { overflow-x: auto; }
+  .foot { border-top: 1px solid var(--line); color: var(--muted); font-size: .88rem; padding: 20px 0 32px; }
+  .btn { display: inline-block; background: var(--accent); color: var(--bg); padding: 10px 16px; border-radius: var(--radius);
+         text-decoration: none; font-weight: 600; }
+  input, select { font: inherit; padding: 9px 10px; border: 1px solid var(--line); border-radius: 8px;
+                  background: var(--surface); color: var(--text); width: 100%; }
+  .prose { max-width: 720px; }
+</style>

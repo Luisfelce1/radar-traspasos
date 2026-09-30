@@ -1,0 +1,30 @@
+---
+import Base from "../../layouts/Base.astro";
+import ListingCard from "../../components/ListingCard.astro";
+import AdSlot from "../../components/AdSlot.astro";
+import { byKey, eur, median, SECTORES, type Listing } from "../../lib/data";
+
+export function getStaticPaths() {
+  return [...byKey("provincia").entries()].map(([provincia, items]) => ({
+    params: { provincia },
+    props: { provincia, items },
+  }));
+}
+const { provincia, items } = Astro.props as { provincia: string; items: Listing[] };
+const lugar = items[0].ubicacion;
+const med = median(items.map((i) => i.precio ?? 0));
+const secs = new Map<string, number>();
+for (const i of items) secs.set(i.sector, (secs.get(i.sector) ?? 0) + 1);
+---
+<Base title={`Negocios en traspaso en ${lugar}`}
+      description={`${items.length} negocios en traspaso y venta en ${lugar}.${med ? ` Precio mediano ${eur(med)}.` : ""}`}>
+  <p class="muted"><a href="/">Inicio</a> › {lugar}</p>
+  <h1>Negocios en traspaso en {lugar}</h1>
+  <p class="muted">{items.length} anuncios activos{med ? <> · precio mediano {eur(med)}</> : null}</p>
+  <ul class="chips">
+    {[...secs.entries()].sort((a, b) => b[1] - a[1]).map(([s, n]) =>
+      <li><a href={`/traspasos/${s}/${provincia}/`}>{SECTORES[s] ?? s} ({n})</a></li>)}
+  </ul>
+  <AdSlot />
+  <div class="grid">{items.map((l) => <ListingCard l={l} />)}</div>
+</Base>

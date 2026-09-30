@@ -1,0 +1,82 @@
+# El "agente": cada 6 horas revisa los portales, resume lo nuevo y lo publica.
+name: Actualizar anuncios
+
+on:
+  schedule:
+    - cron: "17 */6 * * *"      # 00:17, 06:17, 12:17, 18:17 UTC
+  workflow_dispatch:             # botón "Run workflow" para lanzarlo a mano
+    inputs:
+      max_new:
+        description: "Máximo de anuncios nuevos por portal (vacío = valor por defecto)"
+        required: false
+        default: ""
+
+permissions:
+  contents: write                # para hacer commit de los datos
+
+concurrency:
+  group: scraper
+  cancel-in-progress: false
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    timeout-minutes: 50
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Instalar dependencias
+        run: |
+          pip install -r requirements.txt
+          python -m playwright install --with-deps chromium   # para el buscador de transmisionempresas
+
+      - name: Tests
+        run: pytest -q
+
+      - name: Revisar portales y resumir anuncios nuevos
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          SITE_URL: ${{ vars.SITE_URL }}
+        run: |
+          if [ -n "${{ inputs.max_new }}" ]; then
+            python -m scraper.run --max-new "${{ inputs.max_new }}"
+          else
+            python -m scraper.run
+          fi
+
+      - name: Guardar cambios (dispara el deploy en Cloudflare Pages)
+        run: |
+          git config user.name "traspasos-bot"
+          git config user.email "traspasos-bot@users.noreply.github.com"
+          git add site/src/data/listings.json data/state.json
+          if git diff --cached --quiet; then
+            echo "Sin cambios"
+          else
+            git commit -m "datos: actualización $(date -u +'%Y-%m-%d %H:%M') UTC"
+            git push
+          fi
+
+  # Comprueba que la web compila en cada cambio de código (no despliega: eso lo hace Cloudflare).
+  build-check:
+    if: github.event_name == 'workflow_dispatch'
+    needs: scrape
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: site
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref }}
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: site/package-lock.json
+      - run: npm ci
+      - run: npm run build

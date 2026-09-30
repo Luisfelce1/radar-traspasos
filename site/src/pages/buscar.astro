@@ -1,0 +1,70 @@
+---
+import Base from "../layouts/Base.astro";
+import { provincias, SECTORES } from "../lib/data";
+---
+<Base title="Buscar negocios en traspaso" description="Filtra negocios en traspaso por sector, provincia y precio.">
+  <h1>Buscar negocios</h1>
+  <form id="f" class="filters" onsubmit="return false">
+    <input name="q" placeholder="Palabras clave" aria-label="Palabras clave" />
+    <select name="sector" aria-label="Sector">
+      <option value="">Todos los sectores</option>
+      {Object.entries(SECTORES).map(([k, v]) => <option value={k}>{v}</option>)}
+    </select>
+    <select name="provincia" aria-label="Provincia">
+      <option value="">Todas las provincias</option>
+      {provincias.map(([k, v]) => <option value={k}>{v}</option>)}
+    </select>
+    <select name="tipo" aria-label="Operación">
+      <option value="">Traspaso y venta</option>
+      <option value="traspaso">Solo traspaso</option>
+      <option value="venta">Solo venta</option>
+      <option value="alquiler">Alquiler</option>
+    </select>
+    <input name="max" type="number" min="0" step="1000" placeholder="Precio máximo €" aria-label="Precio máximo" />
+  </form>
+  <p id="count" class="muted">Cargando…</p>
+  <ol id="results" class="results"></ol>
+
+  <script is:inline>
+    (async () => {
+      const form = document.getElementById("f");
+      const out = document.getElementById("results");
+      const count = document.getElementById("count");
+      const params = new URLSearchParams(location.search);
+      for (const [k, v] of params) if (form.elements[k]) form.elements[k].value = v;
+      const fold = (s) => (s || "").normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase();
+      const eur = (n) => n ? new Intl.NumberFormat("es-ES", { style: "currency", currency: "EUR", maximumFractionDigits: 0 }).format(n) : "Precio a consultar";
+      let rows = [];
+      try { rows = await (await fetch("/listings-index.json")).json(); } catch (e) { count.textContent = "No se pudo cargar el índice."; return; }
+      const esc = (s) => String(s).replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" })[c]);
+      function render() {
+        const f = Object.fromEntries(new FormData(form));
+        const words = fold(f.q).split(/\s+/).filter(Boolean);
+        const max = Number(f.max) || 0;
+        const hits = rows.filter(([slug, title, tipo, sector, sectorName, prov, ubic, precio]) => {
+          if (f.sector && sector !== f.sector) return false;
+          if (f.provincia && prov !== f.provincia) return false;
+          if (f.tipo && tipo !== f.tipo) return false;
+          if (max && (!precio || precio > max)) return false;
+          const hay = fold(`${title} ${sectorName} ${ubic}`);
+          return words.every((w) => hay.includes(w));
+        });
+        count.textContent = `${hits.length.toLocaleString("es-ES")} ${hits.length === 1 ? "resultado" : "resultados"}`;
+        out.innerHTML = hits.slice(0, 200).map(([slug, title, tipo, , sectorName, , ubic, precio, pmax]) =>
+          `<li><a href="/anuncio/${esc(slug)}/">${esc(title)}</a><span>${esc(sectorName)}${ubic ? " · " + esc(ubic) : ""} · <b>${pmax ? eur(precio) + " – " + eur(pmax) : eur(precio)}</b></span></li>`).join("");
+        const qs = new URLSearchParams(Object.entries(f).filter(([, v]) => v)).toString();
+        history.replaceState(null, "", qs ? `?${qs}` : location.pathname);
+      }
+      form.addEventListener("input", render);
+      render();
+    })();
+  </script>
+</Base>
+
+<style>
+  .filters { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr 1fr; gap: 8px; margin: 12px 0; }
+  @media (max-width: 760px) { .filters { grid-template-columns: 1fr 1fr; } .filters input[name="q"] { grid-column: 1 / -1; } }
+  .results { list-style: none; padding: 0; margin: 0; }
+  .results :global(li) { padding: 10px 0; border-bottom: 1px solid var(--line); display: flex; flex-direction: column; }
+  .results :global(li span) { color: var(--muted); font-size: .9rem; }
+</style>

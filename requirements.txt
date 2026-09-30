@@ -1,0 +1,6 @@
+httpx==0.28.1
+selectolax==0.3.29
+rapidfuzz==3.13.0
+anthropic>=0.50.0
+pytest==8.3.5
+playwright==1.56.0
