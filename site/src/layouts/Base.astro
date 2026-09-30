@@ -1,4 +1,5 @@
 ---
+import "../styles/global.css";
 import { SITE_NAME, SITE_TAGLINE, ADSENSE_CLIENT, CONTACT_EMAIL } from "../lib/site";
 
 interface Props {
@@ -6,13 +7,20 @@ interface Props {
   description?: string;
   noindex?: boolean;
   jsonld?: object;
+  wide?: boolean;
 }
 const { title, description = SITE_TAGLINE, noindex = false, jsonld } = Astro.props;
 const canonical = new URL(Astro.url.pathname, Astro.site);
 const fullTitle = title === SITE_NAME ? title : `${title} | ${SITE_NAME}`;
+const path = Astro.url.pathname;
+const nav = [
+  { href: "/buscar/", label: "Buscar" },
+  { href: "/estadisticas/", label: "Precios" },
+  { href: "/guias/como-hacer-un-traspaso/", label: "Guía" },
+];
 ---
 <!doctype html>
-<html lang="es">
+<html lang="es" data-color="sage" data-style="soft">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -24,80 +32,79 @@ const fullTitle = title === SITE_NAME ? title : `${title} | ${SITE_NAME}`;
     <meta property="og:description" content={description} />
     <meta property="og:type" content="website" />
     <meta property="og:url" content={canonical} />
+    <meta name="theme-color" content="#f7faf8" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#0b0f0d" media="(prefers-color-scheme: dark)" />
     <link rel="sitemap" href="/sitemap-index.xml" />
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <!-- Tema claro/oscuro antes de pintar (volt-ui usa la clase .dark en <html>) -->
+    <script is:inline>
+      (() => {
+        let t = null;
+        try { t = localStorage.getItem("theme"); } catch (e) {}
+        const dark = t ? t === "dark" : matchMedia("(prefers-color-scheme: dark)").matches;
+        document.documentElement.classList.toggle("dark", dark);
+      })();
+    </script>
     {jsonld && <script type="application/ld+json" set:html={JSON.stringify(jsonld)} />}
     {ADSENSE_CLIENT && (
       <script async src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${ADSENSE_CLIENT}`} crossorigin="anonymous"></script>
     )}
   </head>
-  <body>
-    <header class="top">
-      <div class="wrap bar">
-        <a href="/" class="brand">{SITE_NAME}</a>
-        <nav>
-          <a href="/buscar/">Buscar</a>
-          <a href="/estadisticas/">Precios</a>
-          <a href="/guias/como-hacer-un-traspaso/">Guía</a>
+  <body class="flex min-h-dvh flex-col overflow-x-clip">
+    <a href="#main" class="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-50 focus:rounded-md focus:bg-primary focus:px-3 focus:py-2 focus:text-primary-foreground">Saltar al contenido</a>
+
+    <header class="sticky top-0 z-30 border-b border-border bg-background/80 backdrop-blur-md">
+      <div class="mx-auto flex h-16 max-w-6xl items-center gap-4 px-4">
+        <a href="/" class="flex items-center gap-2 font-semibold tracking-tight">
+          <span class="grid size-8 place-items-center rounded-lg bg-primary text-primary-foreground">
+            <svg aria-hidden="true" viewBox="0 0 24 24" class="size-4" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 16l5-5 4 4 7-8"/></svg>
+          </span>
+          <span class="hidden sm:inline">{SITE_NAME}</span>
+        </a>
+        <nav class="ml-auto flex items-center gap-1 text-sm" aria-label="Principal">
+          {nav.map((n) => (
+            <a href={n.href}
+               class:list={["rounded-md px-3 py-2 font-medium transition-colors hover:bg-muted",
+                            path.startsWith(n.href) ? "text-foreground" : "text-muted-foreground"]}>
+              {n.label}
+            </a>
+          ))}
+          <button id="theme-toggle" type="button" aria-label="Cambiar tema claro/oscuro"
+                  class="ml-1 grid size-9 place-items-center rounded-md text-muted-foreground transition-colors hover:bg-muted hover:text-foreground">
+            <svg aria-hidden="true" viewBox="0 0 24 24" class="size-4 dark:hidden" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+            <svg aria-hidden="true" viewBox="0 0 24 24" class="hidden size-4 dark:block" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+          </button>
         </nav>
       </div>
     </header>
-    <main class="wrap"><slot /></main>
-    <footer class="foot">
-      <div class="wrap">
-        <p>{SITE_NAME} es un buscador: resume y enlaza anuncios publicados en otros portales. La información completa y el contacto están siempre en el anuncio original.</p>
-        <p>
-          <a href="/aviso-legal/">Aviso legal</a>{" · "}<a href="/privacidad/">Privacidad y cookies</a>{" · "}<a href="/retirar-anuncio/">Retirar un anuncio</a>{" · "}<a href={`mailto:${CONTACT_EMAIL}`}>Contacto</a>
-        </p>
+
+    <main id="main" class="mx-auto w-full max-w-6xl flex-1 px-4 py-8 sm:py-10">
+      <slot />
+    </main>
+
+    <footer class="border-t border-border bg-muted/40">
+      <div class="mx-auto grid max-w-6xl gap-6 px-4 py-10 text-sm text-muted-foreground sm:grid-cols-[2fr_1fr]">
+        <div>
+          <p class="font-semibold text-foreground">{SITE_NAME}</p>
+          <p class="mt-2 max-w-md">Un buscador que resume y enlaza anuncios publicados en otros portales. La información completa y el contacto están siempre en el anuncio original.</p>
+        </div>
+        <ul class="grid gap-2">
+          <li><a class="hover:text-foreground" href="/aviso-legal/">Aviso legal</a></li>
+          <li><a class="hover:text-foreground" href="/privacidad/">Privacidad y cookies</a></li>
+          <li><a class="hover:text-foreground" href="/retirar-anuncio/">Retirar un anuncio</a></li>
+          <li><a class="hover:text-foreground" href={`mailto:${CONTACT_EMAIL}`}>Contacto</a></li>
+        </ul>
       </div>
     </footer>
+
+    <script is:inline>
+      document.getElementById("theme-toggle")?.addEventListener("click", () => {
+        const dark = document.documentElement.classList.toggle("dark");
+        try { localStorage.setItem("theme", dark ? "dark" : "light"); } catch (e) {}
+      });
+    </script>
   </body>
 </html>
-
-<style is:global>
-  :root {
-    --bg: #fbfaf7; --surface: #ffffff; --text: #1d1d1b; --muted: #6b6a66; --line: #e6e3dc;
-    --accent: #0f6b4f; --accent-soft: #e3f1ec; --warn: #9a3b12; --warn-soft: #fbeae2;
-    --radius: 10px; --font: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
-  }
-  @media (prefers-color-scheme: dark) {
-    :root:not([data-theme="light"]) {
-      --bg: #121412; --surface: #1b1e1b; --text: #ecebe6; --muted: #a09f99; --line: #2c302c;
-      --accent: #5fc79f; --accent-soft: #1c3129; --warn: #f19a72; --warn-soft: #3a2219;
-    }
-  }
-  :root[data-theme="dark"] {
-    --bg: #121412; --surface: #1b1e1b; --text: #ecebe6; --muted: #a09f99; --line: #2c302c;
-    --accent: #5fc79f; --accent-soft: #1c3129; --warn: #f19a72; --warn-soft: #3a2219;
-  }
-  * { box-sizing: border-box; }
-  body { margin: 0; background: var(--bg); color: var(--text); font: 16px/1.55 var(--font); }
-  a { color: var(--accent); }
-  .wrap { max-width: 1080px; margin: 0 auto; padding: 0 16px; }
-  .top { border-bottom: 1px solid var(--line); background: var(--surface); }
-  .bar { display: flex; align-items: center; justify-content: space-between; min-height: 56px; gap: 12px; flex-wrap: wrap; }
-  .brand { font-weight: 700; text-decoration: none; color: var(--text); letter-spacing: -0.01em; }
-  nav { display: flex; gap: 16px; }
-  nav a { text-decoration: none; color: var(--muted); }
-  nav a:hover { color: var(--text); }
-  main { padding: 24px 16px 48px; }
-  h1 { font-size: clamp(1.5rem, 3vw, 2.1rem); line-height: 1.2; letter-spacing: -0.02em; margin: 8px 0 12px; }
-  h2 { font-size: 1.2rem; margin-top: 32px; }
-  .muted { color: var(--muted); }
-  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(290px, 1fr)); gap: 14px; }
-  .chips { display: flex; flex-wrap: wrap; gap: 8px; padding: 0; list-style: none; }
-  .chips a { display: inline-block; padding: 5px 11px; border: 1px solid var(--line); border-radius: 999px;
-             text-decoration: none; color: var(--text); background: var(--surface); font-size: .9rem; }
-  .chips a:hover { border-color: var(--accent); }
-  table { width: 100%; border-collapse: collapse; background: var(--surface); }
-  th, td { text-align: left; padding: 8px 10px; border-bottom: 1px solid var(--line); font-size: .95rem; }
-  th { color: var(--muted); font-weight: 600; }
-  td.num, th.num { text-align: right; font-variant-numeric: tabular-nums; }
-  .table-scroll { overflow-x: auto; }
-  .foot { border-top: 1px solid var(--line); color: var(--muted); font-size: .88rem; padding: 20px 0 32px; }
-  .btn { display: inline-block; background: var(--accent); color: var(--bg); padding: 10px 16px; border-radius: var(--radius);
-         text-decoration: none; font-weight: 600; }
-  input, select { font: inherit; padding: 9px 10px; border: 1px solid var(--line); border-radius: 8px;
-                  background: var(--surface); color: var(--text); width: 100%; }
-  .prose { max-width: 720px; }
-</style>

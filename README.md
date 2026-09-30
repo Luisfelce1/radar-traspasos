@@ -161,6 +161,17 @@ cd site && npm install && npm run dev                # http://localhost:4321
 
 Si un portal no tiene sitemap, el camino es parsear su página de listado ordenada por "más recientes"; se añade en `sitemap.py` como otra función de descubrimiento.
 
+## La web (Astro + volt-ui)
+
+La interfaz usa [volt-ui](https://github.com/Andersseen/volt-ui), una librería de componentes **Angular** con Tailwind v4, integrada en Astro con [`@analogjs/astro-angular`](https://analogjs.org):
+
+- `site/src/components/ng/`: componentes Angular que usan volt-ui (`VoltCard`, `VoltBadge`, `VoltButton`, `VoltInput`, `VoltNativeSelect`, `VoltTable`, `VoltBreadcrumbs`, `VoltAlert`, `VoltSkeleton`…).
+  - `explorer.component.ts`: filtros + rejilla de anuncios en **orden aleatorio** (distinto en cada visita, botón *Barajar*) con carga continua al hacer scroll. Es la única parte que se hidrata en el navegador (`client:load`).
+  - `listing-card`, `listing-detail`, `stats-table`, `breadcrumbs`: se renderizan en el build, sin JavaScript en el navegador.
+- Tema: `sage` (verde) + estilo `soft`, en `site/src/styles/global.css`. Para cambiarlo, sustituye la línea `@import "@voltui/components/themes/presets/sage-soft.css"` por otro preset (`volt`, `ember`, `dusk`, `glacier` × `sharp`, `soft`, `brutal`, `ghost`, `retro`).
+- Modo oscuro automático según el sistema, con botón para cambiarlo en la cabecera.
+- El HTML inicial de cada página incluye 24 anuncios (elegidos al azar en cada build) para que Google los indexe; al cargar, el navegador baraja todo el catálogo.
+
 ## Mantenimiento
 
 - **Un portal cambia su diseño**: verás anuncios con precio o sector vacíos. Ejecuta `parse` sobre una ficha, ajusta las etiquetas en su parser y actualiza el fixture.

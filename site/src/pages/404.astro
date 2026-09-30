@@ -2,6 +2,10 @@
 import Base from "../layouts/Base.astro";
 ---
 <Base title="Página no encontrada" noindex>
-  <h1>Esta página no existe</h1>
-  <p>Puede que el anuncio se haya retirado. <a href="/buscar/">Busca otros negocios</a> o vuelve al <a href="/">inicio</a>.</p>
+  <div class="mx-auto max-w-md py-16 text-center">
+    <p class="text-6xl">🔎</p>
+    <h1 class="mt-4 text-3xl font-semibold tracking-tight">Esta página no existe</h1>
+    <p class="mt-2 text-muted-foreground">Puede que el anuncio se haya retirado.</p>
+    <a href="/buscar/" class="mt-6 inline-flex h-10 items-center rounded-md bg-primary px-4 text-sm font-medium text-primary-foreground shadow-sm">Buscar otros negocios</a>
+  </div>
 </Base>

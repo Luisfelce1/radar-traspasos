@@ -1,14 +1,12 @@
 ---
 import Base from "../../../layouts/Base.astro";
-import ListingCard from "../../../components/ListingCard.astro";
 import AdSlot from "../../../components/AdSlot.astro";
-import { byKey, eur, median, SECTORES, type Listing } from "../../../lib/data";
+import PageHeader from "../../../components/PageHeader.astro";
+import { ExplorerComponent } from "../../../components/ng/explorer.component";
+import { byKey, eur, median, provincias, sample, SECTORES, SECTOR_ICON, toRow, type Listing } from "../../../lib/data";
 
 export function getStaticPaths() {
-  return [...byKey("sector").entries()].map(([sector, items]) => ({
-    params: { sector },
-    props: { sector, items },
-  }));
+  return [...byKey("sector").entries()].map(([sector, items]) => ({ params: { sector }, props: { sector, items } }));
 }
 const { sector, items } = Astro.props as { sector: string; items: Listing[] };
 const name = SECTORES[sector] ?? sector;
@@ -22,15 +20,17 @@ const provList = [...provs.entries()].sort((a, b) => b[1].n - a[1].n);
 ---
 <Base title={`Traspasos de ${name.toLowerCase()} en España`}
       description={`${items.length} negocios de ${name.toLowerCase()} en traspaso y venta en España.${med ? ` Precio mediano: ${eur(med)}.` : ""}`}>
-  <p class="muted"><a href="/">Inicio</a> › {name}</p>
-  <h1>Traspasos de {name.toLowerCase()} en España</h1>
-  <p class="muted">{items.length} anuncios activos{med ? <> · precio mediano {eur(med)}</> : null}</p>
-
-  {provList.length > 0 && (
-    <ul class="chips">
-      {provList.map(([slug, p]) => <li><a href={`/traspasos/${sector}/${slug}/`}>{p.name} ({p.n})</a></li>)}
-    </ul>
-  )}
+  <PageHeader crumbs={[{ label: "Inicio", href: "/" }, { label: name }]} icon={SECTOR_ICON[sector]}
+              title={`Traspasos de ${name.toLowerCase()} en España`}
+              subtitle={`<strong class="text-foreground">${items.length}</strong> anuncios activos${med ? ` · precio mediano <strong class="text-foreground">${eur(med)}</strong>` : ""}`}>
+    {provList.length > 0 && (
+      <ul class="mt-4 flex list-none flex-wrap gap-2 p-0">
+        {provList.map(([slug, p]) => (
+          <li><a href={`/traspasos/${sector}/${slug}/`} class="inline-block rounded-full border border-border bg-surface px-3 py-1 text-sm transition hover:border-primary/40 hover:text-primary">{p.name} <span class="text-muted-foreground">{p.n}</span></a></li>
+        ))}
+      </ul>
+    )}
+  </PageHeader>
   <AdSlot />
-  <div class="grid">{items.map((l) => <ListingCard l={l} />)}</div>
+  <ExplorerComponent client:load preset={{ sector }} initial={sample(items, 24).map(toRow)} provinciaOptions={provincias} />
 </Base>

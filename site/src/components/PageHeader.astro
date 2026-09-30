@@ -1,0 +1,15 @@
+---
+// Cabecera de páginas de listado (sector, provincia…).
+import { BreadcrumbsComponent } from "./ng/breadcrumbs.component";
+interface Props { crumbs: { label: string; href?: string }[]; title: string; subtitle?: string; icon?: string }
+const { crumbs, title, subtitle, icon } = Astro.props;
+---
+<div class="mb-6">
+  <BreadcrumbsComponent items={crumbs} />
+  <h1 class="mt-4 flex items-center gap-3 text-balance text-3xl font-semibold tracking-tight sm:text-4xl">
+    {icon && <span aria-hidden="true" class="grid size-11 shrink-0 place-items-center rounded-xl bg-muted text-2xl">{icon}</span>}
+    {title}
+  </h1>
+  {subtitle && <p class="mt-2 text-muted-foreground" set:html={subtitle} />}
+  <slot />
+</div>
