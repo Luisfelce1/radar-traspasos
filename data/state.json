@@ -1,1 +1,59 @@
-{"skipped": {}, "runs": []}
+{
+ "skipped": {
+  "https://www.negociosenventa.es/busqueda-de-inversor-planta-agroalimentaria-operativa-inversion-150000-en-navarra-12118": {
+   "reason": "busqueda",
+   "date": "2026-09-30"
+  },
+  "https://www.bizalia.com/en-venta/110165/proyecto-avicola-rumania-2-2-hectareas-cerca-de-brasov": {
+   "reason": "extranjero",
+   "date": "2026-09-30"
+  },
+  "https://www.bizalia.com/en-venta/110164/parcelas-forestales-en-rumania": {
+   "reason": "extranjero",
+   "date": "2026-09-30"
+  },
+  "https://www.bizalia.com/en-venta/111119/historico-chateau-con-potencial-para-hospitality-b-b-boutique-alojamientos-rurales-y-retiros": {
+   "reason": "extranjero",
+   "date": "2026-09-30"
+  },
+  "https://www.bizalia.com/en-venta/111041/parque-de-ocio-y-atracciones-en-20-hectareas-de-terreno-en-propiedad": {
+   "reason": "inmueble",
+   "date": "2026-09-30"
+  },
+  "https://www.bizalia.com/en-venta/111086/plataforma-italiana-consolidada-de-formacion-sanitaria-y-simulacion-medica-busca-socio-estrategico-para-impulsar-su-crecimiento": {
+   "reason": "extranjero",
+   "date": "2026-09-30"
+  }
+ },
+ "runs": [
+  {
+   "at": "2026-09-30T18:11:46+00:00",
+   "stats": [
+    {
+     "source": "negociosenventa",
+     "nuevos": 59,
+     "duplicados": 0,
+     "descartados": 1,
+     "errores": 0,
+     "retirados": 0
+    },
+    {
+     "source": "bizalia",
+     "nuevos": 25,
+     "duplicados": 0,
+     "descartados": 5,
+     "errores": 0,
+     "retirados": 0
+    },
+    {
+     "source": "transmisionempresas",
+     "nuevos": 40,
+     "duplicados": 0,
+     "descartados": 0,
+     "errores": 0,
+     "retirados": 0
+    }
+   ]
+  }
+ ]
+}
