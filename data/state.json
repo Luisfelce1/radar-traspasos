@@ -71,6 +71,14 @@
   "https://www.bizalia.com/en-venta/109458/se-busca-participacion-estrategica-30-51-en-una-empresa-de-produccion-de-acero-de-europa-del-este-en-crecimiento": {
    "reason": "busqueda",
    "date": "2026-10-01"
+  },
+  "https://www.bizalia.com/en-venta/110721/los-derechos-de-distribucion-de-un-fabricante-de-vapeadores-de-rapido-crecimiento": {
+   "reason": "extranjero",
+   "date": "2026-10-01"
+  },
+  "https://www.bizalia.com/en-venta/110675/empresa-internacional-de-accesorios-deportivos-para-automoviles-impulsada-por-el-comercio-electronico": {
+   "reason": "extranjero",
+   "date": "2026-10-01"
   }
  },
  "runs": [
@@ -148,6 +156,35 @@
      "nuevos": 27,
      "duplicados": 0,
      "descartados": 3,
+     "errores": 0,
+     "retirados": 0
+    },
+    {
+     "source": "transmisionempresas",
+     "nuevos": 40,
+     "duplicados": 0,
+     "descartados": 0,
+     "errores": 0,
+     "retirados": 0
+    }
+   ]
+  },
+  {
+   "at": "2026-10-01T13:24:28+00:00",
+   "stats": [
+    {
+     "source": "negociosenventa",
+     "nuevos": 60,
+     "duplicados": 0,
+     "descartados": 0,
+     "errores": 0,
+     "retirados": 0
+    },
+    {
+     "source": "bizalia",
+     "nuevos": 28,
+     "duplicados": 0,
+     "descartados": 2,
      "errores": 0,
      "retirados": 0
     },
