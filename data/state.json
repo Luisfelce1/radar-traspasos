@@ -79,6 +79,26 @@
   "https://www.bizalia.com/en-venta/110675/empresa-internacional-de-accesorios-deportivos-para-automoviles-impulsada-por-el-comercio-electronico": {
    "reason": "extranjero",
    "date": "2026-10-01"
+  },
+  "https://www.negociosenventa.es/oportunidad-ideal-para-franquicias-o-inversores-en-madrid-3044": {
+   "reason": "busqueda",
+   "date": "2026-10-01"
+  },
+  "https://www.bizalia.com/en-venta/110389/mandatos-activos-de-pymes-espanolas-rentables-oportunidades-para-inversores": {
+   "reason": "busqueda",
+   "date": "2026-10-01"
+  },
+  "https://www.bizalia.com/en-venta/110410/terreno-de-7-2-hectareas-con-manantial-y-salinas-en-navarra": {
+   "reason": "inmueble",
+   "date": "2026-10-01"
+  },
+  "https://www.bizalia.com/en-venta/110175/venta-de-participacion-del-12-3-en-sociedad-8-socios-inmobiliaria-con-edificio-residencial-en-granada": {
+   "reason": "busqueda",
+   "date": "2026-10-01"
+  },
+  "https://www.bizalia.com/en-venta/110152/empresa-especializada-en-construccion-de-hormigon-con-multiples-disciplinas-nl": {
+   "reason": "extranjero",
+   "date": "2026-10-01"
   }
  },
  "runs": [
@@ -191,6 +211,35 @@
     {
      "source": "transmisionempresas",
      "nuevos": 40,
+     "duplicados": 0,
+     "descartados": 0,
+     "errores": 0,
+     "retirados": 0
+    }
+   ]
+  },
+  {
+   "at": "2026-10-01T22:51:30+00:00",
+   "stats": [
+    {
+     "source": "negociosenventa",
+     "nuevos": 57,
+     "duplicados": 2,
+     "descartados": 1,
+     "errores": 0,
+     "retirados": 0
+    },
+    {
+     "source": "bizalia",
+     "nuevos": 26,
+     "duplicados": 0,
+     "descartados": 4,
+     "errores": 0,
+     "retirados": 0
+    },
+    {
+     "source": "transmisionempresas",
+     "nuevos": 20,
      "duplicados": 0,
      "descartados": 0,
      "errores": 0,
