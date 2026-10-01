@@ -59,6 +59,18 @@
   "https://www.bizalia.com/en-venta/110876/especialista-con-un-modelo-asset-light-en-construccion-y-rehabilitacion-de-edificios-principalmente-clinicas-margen-ebit-superior-al-30-noroeste-de-alemania": {
    "reason": "extranjero",
    "date": "2026-09-30"
+  },
+  "https://www.bizalia.com/en-venta/110933/mantenimiento-de-instalaciones-de-energia-solar-termica-y-fotovoltaica": {
+   "reason": "inmueble",
+   "date": "2026-10-01"
+  },
+  "https://www.bizalia.com/en-venta/110765/empresa-de-soluciones-integrales-para-energia-solar-calefaccion-y-vehiculos-electricos": {
+   "reason": "inmueble",
+   "date": "2026-10-01"
+  },
+  "https://www.bizalia.com/en-venta/109458/se-busca-participacion-estrategica-30-51-en-una-empresa-de-produccion-de-acero-de-europa-del-este-en-crecimiento": {
+   "reason": "busqueda",
+   "date": "2026-10-01"
   }
  },
  "runs": [
@@ -107,6 +119,35 @@
      "nuevos": 22,
      "duplicados": 0,
      "descartados": 8,
+     "errores": 0,
+     "retirados": 0
+    },
+    {
+     "source": "transmisionempresas",
+     "nuevos": 40,
+     "duplicados": 0,
+     "descartados": 0,
+     "errores": 0,
+     "retirados": 0
+    }
+   ]
+  },
+  {
+   "at": "2026-10-01T06:03:33+00:00",
+   "stats": [
+    {
+     "source": "negociosenventa",
+     "nuevos": 60,
+     "duplicados": 0,
+     "descartados": 0,
+     "errores": 0,
+     "retirados": 0
+    },
+    {
+     "source": "bizalia",
+     "nuevos": 27,
+     "duplicados": 0,
+     "descartados": 3,
      "errores": 0,
      "retirados": 0
     },
