@@ -99,6 +99,42 @@
   "https://www.bizalia.com/en-venta/110152/empresa-especializada-en-construccion-de-hormigon-con-multiples-disciplinas-nl": {
    "reason": "extranjero",
    "date": "2026-10-01"
+  },
+  "https://www.negociosenventa.es/compramos-gestoria-asesoria-traspaso-en-valenciavalencia-7393": {
+   "reason": "busqueda",
+   "date": "2026-10-02"
+  },
+  "https://www.negociosenventa.es/grupo-inversor-y-concedente-de-credito-en-madrid-9425": {
+   "reason": "busqueda",
+   "date": "2026-10-02"
+  },
+  "https://www.negociosenventa.es/busco-socio-para-centro-de-masajes-especializado-en-sevilla-8063": {
+   "reason": "busqueda",
+   "date": "2026-10-02"
+  },
+  "https://www.negociosenventa.es/sicaru-proyecto-rural-en-la-axarquia-busca-socio-inversor-en-malaga-12307": {
+   "reason": "busqueda",
+   "date": "2026-10-02"
+  },
+  "https://www.bizalia.com/en-venta/101540/se-vende-carpinteria-industrial-de-madera-naves-y-terrenos": {
+   "reason": "inmueble",
+   "date": "2026-10-02"
+  },
+  "https://www.bizalia.com/en-venta/102771/empresa-de-produccion-ventas-de-muebles-de-diseno-alemania": {
+   "reason": "extranjero",
+   "date": "2026-10-02"
+  },
+  "https://www.bizalia.com/en-venta/107639/limpieza-exclusiva-de-edificios": {
+   "reason": "extranjero",
+   "date": "2026-10-02"
+  },
+  "https://www.bizalia.com/en-venta/108257/alquiler-vacacional-en-la-costa-blanca-norte": {
+   "reason": "extranjero",
+   "date": "2026-10-02"
+  },
+  "https://www.bizalia.com/en-venta/109121/empresa-de-produccion-de-soluciones-de-comunicacion-visual-empresa-de-rotulacion-y-senalizacion": {
+   "reason": "extranjero",
+   "date": "2026-10-02"
   }
  },
  "runs": [
@@ -240,6 +276,35 @@
     {
      "source": "transmisionempresas",
      "nuevos": 20,
+     "duplicados": 0,
+     "descartados": 0,
+     "errores": 0,
+     "retirados": 0
+    }
+   ]
+  },
+  {
+   "at": "2026-10-02T05:45:34+00:00",
+   "stats": [
+    {
+     "source": "negociosenventa",
+     "nuevos": 55,
+     "duplicados": 1,
+     "descartados": 4,
+     "errores": 0,
+     "retirados": 0
+    },
+    {
+     "source": "bizalia",
+     "nuevos": 25,
+     "duplicados": 0,
+     "descartados": 5,
+     "errores": 0,
+     "retirados": 0
+    },
+    {
+     "source": "transmisionempresas",
+     "nuevos": 0,
      "duplicados": 0,
      "descartados": 0,
      "errores": 0,
