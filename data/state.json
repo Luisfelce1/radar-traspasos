@@ -135,6 +135,10 @@
   "https://www.bizalia.com/en-venta/109121/empresa-de-produccion-de-soluciones-de-comunicacion-visual-empresa-de-rotulacion-y-senalizacion": {
    "reason": "extranjero",
    "date": "2026-10-02"
+  },
+  "https://www.negociosenventa.es/busco-socioa-estrategico-en-valenciavalencia-10005": {
+   "reason": "busqueda",
+   "date": "2026-10-02"
   }
  },
  "runs": [
@@ -299,6 +303,35 @@
      "nuevos": 25,
      "duplicados": 0,
      "descartados": 5,
+     "errores": 0,
+     "retirados": 0
+    },
+    {
+     "source": "transmisionempresas",
+     "nuevos": 0,
+     "duplicados": 0,
+     "descartados": 0,
+     "errores": 0,
+     "retirados": 0
+    }
+   ]
+  },
+  {
+   "at": "2026-10-02T12:37:35+00:00",
+   "stats": [
+    {
+     "source": "negociosenventa",
+     "nuevos": 59,
+     "duplicados": 0,
+     "descartados": 1,
+     "errores": 0,
+     "retirados": 0
+    },
+    {
+     "source": "bizalia",
+     "nuevos": 1,
+     "duplicados": 0,
+     "descartados": 0,
      "errores": 0,
      "retirados": 0
     },
