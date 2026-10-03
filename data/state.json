@@ -151,6 +151,14 @@
   "https://www.negociosenventa.es/se-transapasa-centro-medico-estetico-o-busco-socio-en-madrid-10260": {
    "reason": "busqueda",
    "date": "2026-10-03"
+  },
+  "https://www.negociosenventa.es/estoy-dispuesto-a-invertir-en-cualquier-tipo-de-proyecto-en-madrid-11215": {
+   "reason": "busqueda",
+   "date": "2026-10-03"
+  },
+  "https://www.negociosenventa.es/socio-para-promocion-en-palma-de-mallorca-en-balears-illes-12018": {
+   "reason": "busqueda",
+   "date": "2026-10-03"
   }
  },
  "runs": [
@@ -422,6 +430,35 @@
      "source": "negociosenventa",
      "nuevos": 58,
      "duplicados": 0,
+     "descartados": 2,
+     "errores": 0,
+     "retirados": 0
+    },
+    {
+     "source": "bizalia",
+     "nuevos": 0,
+     "duplicados": 0,
+     "descartados": 0,
+     "errores": 0,
+     "retirados": 0
+    },
+    {
+     "source": "transmisionempresas",
+     "nuevos": 0,
+     "duplicados": 0,
+     "descartados": 0,
+     "errores": 0,
+     "retirados": 0
+    }
+   ]
+  },
+  {
+   "at": "2026-10-03T16:21:43+00:00",
+   "stats": [
+    {
+     "source": "negociosenventa",
+     "nuevos": 57,
+     "duplicados": 1,
      "descartados": 2,
      "errores": 0,
      "retirados": 0
