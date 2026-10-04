@@ -183,6 +183,18 @@
   "https://www.negociosenventa.es/financiacion-para-tu-empresa-o-startup-tu-puente-hacia-el-capital-que-necesitas-en-alicantealacant-12298": {
    "reason": "busqueda",
    "date": "2026-10-04"
+  },
+  "https://www.negociosenventa.es/venta-de-fabrica-embutidos-y-carniceria-incluye-vivienda-y-solar-edificable-anexo-en-zamora-3533": {
+   "reason": "inmueble",
+   "date": "2026-10-04"
+  },
+  "https://www.negociosenventa.es/se-busca-socio-o-inversor-en-madrid-11584": {
+   "reason": "busqueda",
+   "date": "2026-10-04"
+  },
+  "https://www.negociosenventa.es/socio-de-bodega-en-la-ribera-del-duero-en-valladolid-11843": {
+   "reason": "busqueda",
+   "date": "2026-10-04"
   }
  },
  "runs": [
@@ -571,6 +583,35 @@
      "nuevos": 59,
      "duplicados": 0,
      "descartados": 1,
+     "errores": 0,
+     "retirados": 0
+    },
+    {
+     "source": "bizalia",
+     "nuevos": 0,
+     "duplicados": 0,
+     "descartados": 0,
+     "errores": 0,
+     "retirados": 0
+    },
+    {
+     "source": "transmisionempresas",
+     "nuevos": 0,
+     "duplicados": 0,
+     "descartados": 0,
+     "errores": 0,
+     "retirados": 0
+    }
+   ]
+  },
+  {
+   "at": "2026-10-04T21:27:32+00:00",
+   "stats": [
+    {
+     "source": "negociosenventa",
+     "nuevos": 57,
+     "duplicados": 0,
+     "descartados": 3,
      "errores": 0,
      "retirados": 0
     },
