@@ -179,6 +179,10 @@
   "https://www.negociosenventa.es/vendo-patente-o-socio-para-fabricarlo-en-madrid-11251": {
    "reason": "busqueda",
    "date": "2026-10-04"
+  },
+  "https://www.negociosenventa.es/financiacion-para-tu-empresa-o-startup-tu-puente-hacia-el-capital-que-necesitas-en-alicantealacant-12298": {
+   "reason": "busqueda",
+   "date": "2026-10-04"
   }
  },
  "runs": [
@@ -538,6 +542,35 @@
      "nuevos": 55,
      "duplicados": 0,
      "descartados": 5,
+     "errores": 0,
+     "retirados": 0
+    },
+    {
+     "source": "bizalia",
+     "nuevos": 0,
+     "duplicados": 0,
+     "descartados": 0,
+     "errores": 0,
+     "retirados": 0
+    },
+    {
+     "source": "transmisionempresas",
+     "nuevos": 0,
+     "duplicados": 0,
+     "descartados": 0,
+     "errores": 0,
+     "retirados": 0
+    }
+   ]
+  },
+  {
+   "at": "2026-10-04T12:24:06+00:00",
+   "stats": [
+    {
+     "source": "negociosenventa",
+     "nuevos": 59,
+     "duplicados": 0,
+     "descartados": 1,
      "errores": 0,
      "retirados": 0
     },
