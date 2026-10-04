@@ -159,6 +159,26 @@
   "https://www.negociosenventa.es/socio-para-promocion-en-palma-de-mallorca-en-balears-illes-12018": {
    "reason": "busqueda",
    "date": "2026-10-03"
+  },
+  "https://www.negociosenventa.es/buscamos-inversor-para-proyecto-consolidado-en-barcelona-12784": {
+   "reason": "busqueda",
+   "date": "2026-10-04"
+  },
+  "https://www.negociosenventa.es/socio-trabajador-en-malaga-9843": {
+   "reason": "busqueda",
+   "date": "2026-10-04"
+  },
+  "https://www.negociosenventa.es/urgente-compro-estanco-en-tarragona-en-tarragona-3788": {
+   "reason": "busqueda",
+   "date": "2026-10-04"
+  },
+  "https://www.negociosenventa.es/empresa-de-iluminacion-busca-socio-inversor-para-seguir-creciendo-en-guadalajara-1518": {
+   "reason": "busqueda",
+   "date": "2026-10-04"
+  },
+  "https://www.negociosenventa.es/vendo-patente-o-socio-para-fabricarlo-en-madrid-11251": {
+   "reason": "busqueda",
+   "date": "2026-10-04"
   }
  },
  "runs": [
@@ -495,6 +515,35 @@
     {
      "source": "bizalia",
      "nuevos": 2,
+     "duplicados": 0,
+     "descartados": 0,
+     "errores": 0,
+     "retirados": 0
+    },
+    {
+     "source": "transmisionempresas",
+     "nuevos": 0,
+     "duplicados": 0,
+     "descartados": 0,
+     "errores": 0,
+     "retirados": 0
+    }
+   ]
+  },
+  {
+   "at": "2026-10-04T05:55:12+00:00",
+   "stats": [
+    {
+     "source": "negociosenventa",
+     "nuevos": 55,
+     "duplicados": 0,
+     "descartados": 5,
+     "errores": 0,
+     "retirados": 0
+    },
+    {
+     "source": "bizalia",
+     "nuevos": 0,
      "duplicados": 0,
      "descartados": 0,
      "errores": 0,
