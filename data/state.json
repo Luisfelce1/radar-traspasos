@@ -195,6 +195,18 @@
   "https://www.negociosenventa.es/socio-de-bodega-en-la-ribera-del-duero-en-valladolid-11843": {
    "reason": "busqueda",
    "date": "2026-10-04"
+  },
+  "https://www.negociosenventa.es/se-busca-socio-o-inversor-para-comlejo-rural-y-agricultura-en-almeria-10620": {
+   "reason": "busqueda",
+   "date": "2026-10-05"
+  },
+  "https://www.negociosenventa.es/socio-inversor-para-centro-de-formacion-tecnologica-online-madrid-en-madrid-12913": {
+   "reason": "busqueda",
+   "date": "2026-10-05"
+  },
+  "https://www.negociosenventa.es/venta-de-terreno-con-licencia-para-instalacion-de-desguace-y-proyecto-en-almeria-9142": {
+   "reason": "inmueble",
+   "date": "2026-10-05"
   }
  },
  "runs": [
@@ -611,6 +623,35 @@
      "source": "negociosenventa",
      "nuevos": 57,
      "duplicados": 0,
+     "descartados": 3,
+     "errores": 0,
+     "retirados": 0
+    },
+    {
+     "source": "bizalia",
+     "nuevos": 0,
+     "duplicados": 0,
+     "descartados": 0,
+     "errores": 0,
+     "retirados": 0
+    },
+    {
+     "source": "transmisionempresas",
+     "nuevos": 0,
+     "duplicados": 0,
+     "descartados": 0,
+     "errores": 0,
+     "retirados": 0
+    }
+   ]
+  },
+  {
+   "at": "2026-10-05T05:42:19+00:00",
+   "stats": [
+    {
+     "source": "negociosenventa",
+     "nuevos": 56,
+     "duplicados": 1,
      "descartados": 3,
      "errores": 0,
      "retirados": 0
