@@ -211,6 +211,18 @@
   "https://www.negociosenventa.es/compro-aparcamiento-en-madrid-7013": {
    "reason": "busqueda",
    "date": "2026-10-06"
+  },
+  "https://www.negociosenventa.es/busco-socio-inversor-para-negocio-de-ferreteria-en-madrid-2283": {
+   "reason": "busqueda",
+   "date": "2026-10-06"
+  },
+  "https://www.negociosenventa.es/necesito-inversor-para-publicidad-en-cuenca-12301": {
+   "reason": "busqueda",
+   "date": "2026-10-06"
+  },
+  "https://www.negociosenventa.es/se-busca-socio-inversor-en-coruna-a-9301": {
+   "reason": "busqueda",
+   "date": "2026-10-06"
   }
  },
  "runs": [
@@ -744,6 +756,35 @@
      "nuevos": 59,
      "duplicados": 0,
      "descartados": 1,
+     "errores": 0,
+     "retirados": 0
+    },
+    {
+     "source": "bizalia",
+     "nuevos": 0,
+     "duplicados": 0,
+     "descartados": 0,
+     "errores": 0,
+     "retirados": 0
+    },
+    {
+     "source": "transmisionempresas",
+     "nuevos": 0,
+     "duplicados": 0,
+     "descartados": 0,
+     "errores": 0,
+     "retirados": 0
+    }
+   ]
+  },
+  {
+   "at": "2026-10-06T18:25:26+00:00",
+   "stats": [
+    {
+     "source": "negociosenventa",
+     "nuevos": 56,
+     "duplicados": 1,
+     "descartados": 3,
      "errores": 0,
      "retirados": 0
     },
