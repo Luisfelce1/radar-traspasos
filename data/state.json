@@ -207,6 +207,10 @@
   "https://www.negociosenventa.es/venta-de-terreno-con-licencia-para-instalacion-de-desguace-y-proyecto-en-almeria-9142": {
    "reason": "inmueble",
    "date": "2026-10-05"
+  },
+  "https://www.negociosenventa.es/compro-aparcamiento-en-madrid-7013": {
+   "reason": "busqueda",
+   "date": "2026-10-06"
   }
  },
  "runs": [
@@ -713,6 +717,35 @@
      "descartados": 0,
      "errores": 0,
      "retirados": 1
+    },
+    {
+     "source": "bizalia",
+     "nuevos": 0,
+     "duplicados": 0,
+     "descartados": 0,
+     "errores": 0,
+     "retirados": 0
+    },
+    {
+     "source": "transmisionempresas",
+     "nuevos": 0,
+     "duplicados": 0,
+     "descartados": 0,
+     "errores": 0,
+     "retirados": 0
+    }
+   ]
+  },
+  {
+   "at": "2026-10-06T06:23:34+00:00",
+   "stats": [
+    {
+     "source": "negociosenventa",
+     "nuevos": 59,
+     "duplicados": 0,
+     "descartados": 1,
+     "errores": 0,
+     "retirados": 0
     },
     {
      "source": "bizalia",
