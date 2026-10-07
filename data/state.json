@@ -235,6 +235,22 @@
   "https://www.negociosenventa.es/busco-socio-o-inversor-en-rioja-la-4126": {
    "reason": "busqueda",
    "date": "2026-10-07"
+  },
+  "https://www.negociosenventa.es/buscamos-inversor-en-barcelona-6172": {
+   "reason": "busqueda",
+   "date": "2026-10-07"
+  },
+  "https://www.negociosenventa.es/busco-socio-inversor-en-barcelona-9149": {
+   "reason": "busqueda",
+   "date": "2026-10-07"
+  },
+  "https://www.negociosenventa.es/se-busca-socio-inversor-que-quiera-formar-parte-proyecto-innovador-en-madrid-pandora-en-madrid-8340": {
+   "reason": "busqueda",
+   "date": "2026-10-07"
+  },
+  "https://www.negociosenventa.es/busco-socio-para-patente-internacional-en-barcelona-6307": {
+   "reason": "busqueda",
+   "date": "2026-10-07"
   }
  },
  "runs": [
@@ -828,6 +844,35 @@
      "descartados": 3,
      "errores": 0,
      "retirados": 1
+    },
+    {
+     "source": "bizalia",
+     "nuevos": 0,
+     "duplicados": 0,
+     "descartados": 0,
+     "errores": 0,
+     "retirados": 0
+    },
+    {
+     "source": "transmisionempresas",
+     "nuevos": 0,
+     "duplicados": 0,
+     "descartados": 0,
+     "errores": 0,
+     "retirados": 0
+    }
+   ]
+  },
+  {
+   "at": "2026-10-07T13:25:59+00:00",
+   "stats": [
+    {
+     "source": "negociosenventa",
+     "nuevos": 56,
+     "duplicados": 0,
+     "descartados": 4,
+     "errores": 0,
+     "retirados": 0
     },
     {
      "source": "bizalia",
