@@ -223,6 +223,18 @@
   "https://www.negociosenventa.es/se-busca-socio-inversor-en-coruna-a-9301": {
    "reason": "busqueda",
    "date": "2026-10-06"
+  },
+  "https://www.negociosenventa.es/busco-traspaso-de-lavanderias-automaticas-en-alicantealacant-6528": {
+   "reason": "busqueda",
+   "date": "2026-10-07"
+  },
+  "https://www.negociosenventa.es/empresa-de-fisioestetica-en-crecimiento-busca-socio-activo-en-madrid-10128": {
+   "reason": "busqueda",
+   "date": "2026-10-07"
+  },
+  "https://www.negociosenventa.es/busco-socio-o-inversor-en-rioja-la-4126": {
+   "reason": "busqueda",
+   "date": "2026-10-07"
   }
  },
  "runs": [
@@ -787,6 +799,35 @@
      "descartados": 3,
      "errores": 0,
      "retirados": 0
+    },
+    {
+     "source": "bizalia",
+     "nuevos": 0,
+     "duplicados": 0,
+     "descartados": 0,
+     "errores": 0,
+     "retirados": 0
+    },
+    {
+     "source": "transmisionempresas",
+     "nuevos": 0,
+     "duplicados": 0,
+     "descartados": 0,
+     "errores": 0,
+     "retirados": 0
+    }
+   ]
+  },
+  {
+   "at": "2026-10-07T06:02:19+00:00",
+   "stats": [
+    {
+     "source": "negociosenventa",
+     "nuevos": 56,
+     "duplicados": 1,
+     "descartados": 3,
+     "errores": 0,
+     "retirados": 1
     },
     {
      "source": "bizalia",
