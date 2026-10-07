@@ -251,6 +251,18 @@
   "https://www.negociosenventa.es/busco-socio-para-patente-internacional-en-barcelona-6307": {
    "reason": "busqueda",
    "date": "2026-10-07"
+  },
+  "https://www.negociosenventa.es/buscamos-inversores-para-masterfranquicia-en-madrid-8786": {
+   "reason": "busqueda",
+   "date": "2026-10-07"
+  },
+  "https://www.negociosenventa.es/socio-capitalista-en-cadiz-10144": {
+   "reason": "busqueda",
+   "date": "2026-10-07"
+  },
+  "https://www.negociosenventa.es/vendo-posada-de-turismo-rural-inmejorable-ubicacion-mas-de-3600-m2-de-terreno-urbano-area-construida-600m2-acreditada-y-en-funcionamiento-con-clientes-fijos-en-cantabria-5100": {
+   "reason": "inmueble",
+   "date": "2026-10-07"
   }
  },
  "runs": [
@@ -871,6 +883,35 @@
      "nuevos": 56,
      "duplicados": 0,
      "descartados": 4,
+     "errores": 0,
+     "retirados": 0
+    },
+    {
+     "source": "bizalia",
+     "nuevos": 0,
+     "duplicados": 0,
+     "descartados": 0,
+     "errores": 0,
+     "retirados": 0
+    },
+    {
+     "source": "transmisionempresas",
+     "nuevos": 0,
+     "duplicados": 0,
+     "descartados": 0,
+     "errores": 0,
+     "retirados": 0
+    }
+   ]
+  },
+  {
+   "at": "2026-10-07T23:08:50+00:00",
+   "stats": [
+    {
+     "source": "negociosenventa",
+     "nuevos": 57,
+     "duplicados": 0,
+     "descartados": 3,
      "errores": 0,
      "retirados": 0
     },
