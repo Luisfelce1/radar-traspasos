@@ -263,6 +263,26 @@
   "https://www.negociosenventa.es/vendo-posada-de-turismo-rural-inmejorable-ubicacion-mas-de-3600-m2-de-terreno-urbano-area-construida-600m2-acreditada-y-en-funcionamiento-con-clientes-fijos-en-cantabria-5100": {
    "reason": "inmueble",
    "date": "2026-10-07"
+  },
+  "https://www.negociosenventa.es/oportunidad-vendo-importante-invento-por-jubilacion-o-busco-colaborador-para-su-venta-en-cordoba-937": {
+   "reason": "busqueda",
+   "date": "2026-10-08"
+  },
+  "https://www.negociosenventa.es/busco-socio-inversionista-en-alicantealacant-5664": {
+   "reason": "busqueda",
+   "date": "2026-10-08"
+  },
+  "https://www.negociosenventa.es/busco-socio-trabajador-en-jaen-9980": {
+   "reason": "busqueda",
+   "date": "2026-10-08"
+  },
+  "https://www.negociosenventa.es/herramitienda-hmt-tools-ecommerce-operativo-con-amazon-shopify-stock-y-opcion-de-socio-inversor-en-alicantealacant-12891": {
+   "reason": "busqueda",
+   "date": "2026-10-08"
+  },
+  "https://www.negociosenventa.es/busco-socio-para-completar-proyecto-de-obrador-en-barcelona-9937": {
+   "reason": "busqueda",
+   "date": "2026-10-08"
   }
  },
  "runs": [
@@ -914,6 +934,35 @@
      "descartados": 3,
      "errores": 0,
      "retirados": 0
+    },
+    {
+     "source": "bizalia",
+     "nuevos": 0,
+     "duplicados": 0,
+     "descartados": 0,
+     "errores": 0,
+     "retirados": 0
+    },
+    {
+     "source": "transmisionempresas",
+     "nuevos": 0,
+     "duplicados": 0,
+     "descartados": 0,
+     "errores": 0,
+     "retirados": 0
+    }
+   ]
+  },
+  {
+   "at": "2026-10-08T06:06:44+00:00",
+   "stats": [
+    {
+     "source": "negociosenventa",
+     "nuevos": 53,
+     "duplicados": 2,
+     "descartados": 5,
+     "errores": 0,
+     "retirados": 2
     },
     {
      "source": "bizalia",
