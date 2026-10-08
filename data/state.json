@@ -295,6 +295,30 @@
   "https://www.negociosenventa.es/prestamos-y-financiacion-flexible-en-asturias-12536": {
    "reason": "busqueda",
    "date": "2026-10-08"
+  },
+  "https://www.negociosenventa.es/busco-socio-inversor-en-girona-8566": {
+   "reason": "busqueda",
+   "date": "2026-10-08"
+  },
+  "https://www.negociosenventa.es/busco-socioinversor-en-barcelona-7354": {
+   "reason": "busqueda",
+   "date": "2026-10-08"
+  },
+  "https://www.negociosenventa.es/busco-inversor-en-barcelona-5697": {
+   "reason": "busqueda",
+   "date": "2026-10-08"
+  },
+  "https://www.negociosenventa.es/busco-socio-o-socia-capitalista-en-barcelona-10270": {
+   "reason": "busqueda",
+   "date": "2026-10-08"
+  },
+  "https://www.negociosenventa.es/buscamos-socio-inversor-en-valenciavalencia-10139": {
+   "reason": "busqueda",
+   "date": "2026-10-08"
+  },
+  "https://www.negociosenventa.es/buscamos-socio-inversionista-en-madrid-11914": {
+   "reason": "busqueda",
+   "date": "2026-10-08"
   }
  },
  "runs": [
@@ -1002,6 +1026,35 @@
      "nuevos": 56,
      "duplicados": 1,
      "descartados": 3,
+     "errores": 0,
+     "retirados": 0
+    },
+    {
+     "source": "bizalia",
+     "nuevos": 0,
+     "duplicados": 0,
+     "descartados": 0,
+     "errores": 0,
+     "retirados": 0
+    },
+    {
+     "source": "transmisionempresas",
+     "nuevos": 0,
+     "duplicados": 0,
+     "descartados": 0,
+     "errores": 0,
+     "retirados": 0
+    }
+   ]
+  },
+  {
+   "at": "2026-10-08T23:24:25+00:00",
+   "stats": [
+    {
+     "source": "negociosenventa",
+     "nuevos": 54,
+     "duplicados": 0,
+     "descartados": 6,
      "errores": 0,
      "retirados": 0
     },
