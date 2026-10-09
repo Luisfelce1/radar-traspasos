@@ -319,6 +319,14 @@
   "https://www.negociosenventa.es/buscamos-socio-inversionista-en-madrid-11914": {
    "reason": "busqueda",
    "date": "2026-10-08"
+  },
+  "https://www.negociosenventa.es/busco-inversor-en-bizkaia-9869": {
+   "reason": "busqueda",
+   "date": "2026-10-09"
+  },
+  "https://www.negociosenventa.es/traspaso-de-asador-de-pollos-al-carbonoportunidad-para-autoempleo-o-inversores-en-madrid-10572": {
+   "reason": "busqueda",
+   "date": "2026-10-09"
   }
  },
  "runs": [
@@ -1084,6 +1092,35 @@
      "nuevos": 0,
      "duplicados": 0,
      "descartados": 0,
+     "errores": 0,
+     "retirados": 0
+    },
+    {
+     "source": "bizalia",
+     "nuevos": 0,
+     "duplicados": 0,
+     "descartados": 0,
+     "errores": 0,
+     "retirados": 0
+    },
+    {
+     "source": "transmisionempresas",
+     "nuevos": 0,
+     "duplicados": 0,
+     "descartados": 0,
+     "errores": 0,
+     "retirados": 0
+    }
+   ]
+  },
+  {
+   "at": "2026-10-09T13:19:54+00:00",
+   "stats": [
+    {
+     "source": "negociosenventa",
+     "nuevos": 58,
+     "duplicados": 0,
+     "descartados": 2,
      "errores": 0,
      "retirados": 0
     },
