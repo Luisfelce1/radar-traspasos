@@ -327,6 +327,14 @@
   "https://www.negociosenventa.es/traspaso-de-asador-de-pollos-al-carbonoportunidad-para-autoempleo-o-inversores-en-madrid-10572": {
    "reason": "busqueda",
    "date": "2026-10-09"
+  },
+  "https://www.negociosenventa.es/busco-socio-inversor-para-cafeteria-heladeria-en-benidorm-en-alicantealacant-11939": {
+   "reason": "busqueda",
+   "date": "2026-10-09"
+  },
+  "https://www.negociosenventa.es/compro-cartera-de-clientes-de-asesoria-en-alicante-en-alicantealacant-4989": {
+   "reason": "busqueda",
+   "date": "2026-10-09"
   }
  },
  "runs": [
@@ -1130,6 +1138,35 @@
      "duplicados": 0,
      "descartados": 0,
      "errores": 0,
+     "retirados": 0
+    },
+    {
+     "source": "transmisionempresas",
+     "nuevos": 0,
+     "duplicados": 0,
+     "descartados": 0,
+     "errores": 0,
+     "retirados": 0
+    }
+   ]
+  },
+  {
+   "at": "2026-10-09T22:42:21+00:00",
+   "stats": [
+    {
+     "source": "negociosenventa",
+     "nuevos": 57,
+     "duplicados": 1,
+     "descartados": 2,
+     "errores": 0,
+     "retirados": 0
+    },
+    {
+     "source": "bizalia",
+     "nuevos": 1,
+     "duplicados": 0,
+     "descartados": 0,
+     "errores": 1,
      "retirados": 0
     },
     {
