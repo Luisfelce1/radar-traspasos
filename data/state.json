@@ -347,6 +347,18 @@
   "https://www.negociosenventa.es/busco-socio-inversor-en-sevilla-12600": {
    "reason": "busqueda",
    "date": "2026-10-11"
+  },
+  "https://www.negociosenventa.es/arrendamiento-de-local-muy-centrico-en-ciudad-real-11651": {
+   "reason": "inmueble",
+   "date": "2026-10-11"
+  },
+  "https://www.negociosenventa.es/busco-socio-para-restaurante-en-asturias-1302": {
+   "reason": "busqueda",
+   "date": "2026-10-11"
+  },
+  "https://www.negociosenventa.es/se-busca-socio-operativo-en-asturias-9042": {
+   "reason": "busqueda",
+   "date": "2026-10-11"
   }
  },
  "runs": [
@@ -1285,6 +1297,35 @@
      "source": "negociosenventa",
      "nuevos": 55,
      "duplicados": 2,
+     "descartados": 3,
+     "errores": 0,
+     "retirados": 0
+    },
+    {
+     "source": "bizalia",
+     "nuevos": 0,
+     "duplicados": 0,
+     "descartados": 0,
+     "errores": 1,
+     "retirados": 0
+    },
+    {
+     "source": "transmisionempresas",
+     "nuevos": 0,
+     "duplicados": 0,
+     "descartados": 0,
+     "errores": 0,
+     "retirados": 0
+    }
+   ]
+  },
+  {
+   "at": "2026-10-11T12:52:51+00:00",
+   "stats": [
+    {
+     "source": "negociosenventa",
+     "nuevos": 56,
+     "duplicados": 1,
      "descartados": 3,
      "errores": 0,
      "retirados": 0
