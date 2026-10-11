@@ -335,6 +335,18 @@
   "https://www.negociosenventa.es/compro-cartera-de-clientes-de-asesoria-en-alicante-en-alicantealacant-4989": {
    "reason": "busqueda",
    "date": "2026-10-09"
+  },
+  "https://www.negociosenventa.es/se-busca-socio-capitalista-en-toledo-10395": {
+   "reason": "busqueda",
+   "date": "2026-10-11"
+  },
+  "https://www.negociosenventa.es/inversion-para-sus-proyectos-en-cadiz-12500": {
+   "reason": "busqueda",
+   "date": "2026-10-11"
+  },
+  "https://www.negociosenventa.es/busco-socio-inversor-en-sevilla-12600": {
+   "reason": "busqueda",
+   "date": "2026-10-11"
   }
  },
  "runs": [
@@ -1245,6 +1257,35 @@
      "nuevos": 59,
      "duplicados": 1,
      "descartados": 0,
+     "errores": 0,
+     "retirados": 0
+    },
+    {
+     "source": "bizalia",
+     "nuevos": 0,
+     "duplicados": 0,
+     "descartados": 0,
+     "errores": 1,
+     "retirados": 0
+    },
+    {
+     "source": "transmisionempresas",
+     "nuevos": 0,
+     "duplicados": 0,
+     "descartados": 0,
+     "errores": 0,
+     "retirados": 0
+    }
+   ]
+  },
+  {
+   "at": "2026-10-11T05:49:45+00:00",
+   "stats": [
+    {
+     "source": "negociosenventa",
+     "nuevos": 55,
+     "duplicados": 2,
+     "descartados": 3,
      "errores": 0,
      "retirados": 0
     },
