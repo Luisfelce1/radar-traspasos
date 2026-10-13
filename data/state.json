@@ -1458,6 +1458,35 @@
      "retirados": 0
     }
    ]
+  },
+  {
+   "at": "2026-10-13T00:43:33+00:00",
+   "stats": [
+    {
+     "source": "negociosenventa",
+     "nuevos": 60,
+     "duplicados": 0,
+     "descartados": 0,
+     "errores": 0,
+     "retirados": 1
+    },
+    {
+     "source": "bizalia",
+     "nuevos": 2,
+     "duplicados": 0,
+     "descartados": 0,
+     "errores": 1,
+     "retirados": 0
+    },
+    {
+     "source": "transmisionempresas",
+     "nuevos": 0,
+     "duplicados": 0,
+     "descartados": 0,
+     "errores": 0,
+     "retirados": 0
+    }
+   ]
   }
  ]
 }
