@@ -415,6 +415,26 @@
   "https://www.negociosenventa.es/casa-o-chalet-independiente-en-venta-en-gandara-en-pontevedra-11425": {
    "reason": "inmueble",
    "date": "2026-10-14"
+  },
+  "https://www.negociosenventa.es/busco-socio-en-coruna-a-12323": {
+   "reason": "busqueda",
+   "date": "2026-10-14"
+  },
+  "https://www.negociosenventa.es/buscamos-inversosr-en-balears-illes-10303": {
+   "reason": "busqueda",
+   "date": "2026-10-14"
+  },
+  "https://www.negociosenventa.es/inversosocio-en-pontevedra-2140": {
+   "reason": "busqueda",
+   "date": "2026-10-14"
+  },
+  "https://www.negociosenventa.es/ofrezco-terreno-para-montar-estacion-de-servicio-en-jaen-10525": {
+   "reason": "inmueble",
+   "date": "2026-10-14"
+  },
+  "https://www.negociosenventa.es/busco-sicio-para-mi-academia-de-musica-en-alicantealacant-7608": {
+   "reason": "busqueda",
+   "date": "2026-10-14"
   }
  },
  "runs": [
@@ -1615,6 +1635,35 @@
      "nuevos": 56,
      "duplicados": 1,
      "descartados": 3,
+     "errores": 0,
+     "retirados": 0
+    },
+    {
+     "source": "bizalia",
+     "nuevos": 0,
+     "duplicados": 0,
+     "descartados": 0,
+     "errores": 1,
+     "retirados": 0
+    },
+    {
+     "source": "transmisionempresas",
+     "nuevos": 0,
+     "duplicados": 0,
+     "descartados": 0,
+     "errores": 0,
+     "retirados": 0
+    }
+   ]
+  },
+  {
+   "at": "2026-10-14T17:14:04+00:00",
+   "stats": [
+    {
+     "source": "negociosenventa",
+     "nuevos": 55,
+     "duplicados": 0,
+     "descartados": 5,
      "errores": 0,
      "retirados": 0
     },
