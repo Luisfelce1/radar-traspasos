@@ -467,6 +467,30 @@
   "https://www.negociosenventa.es/prestamo-e-inversion-para-sus-proyectos-y-negocios-rentables-en-ciudad-real-7946": {
    "reason": "busqueda",
    "date": "2026-10-15"
+  },
+  "https://www.negociosenventa.es/socio-inversor-para-productora-audiovisual-en-bizkaia-7942": {
+   "reason": "busqueda",
+   "date": "2026-10-15"
+  },
+  "https://www.negociosenventa.es/buscamos-socio-ejecutivo-en-madrid-8402": {
+   "reason": "busqueda",
+   "date": "2026-10-15"
+  },
+  "https://www.negociosenventa.es/asesoria-traspaso-o-socio-en-almeria-8449": {
+   "reason": "busqueda",
+   "date": "2026-10-15"
+  },
+  "https://www.negociosenventa.es/socio-inversor-en-alicantealacant-11977": {
+   "reason": "busqueda",
+   "date": "2026-10-15"
+  },
+  "https://www.negociosenventa.es/vendo-terreno-comercial-valle-de-los-chillos-quito-ecuador-en-barcelona-10070": {
+   "reason": "inmueble",
+   "date": "2026-10-15"
+  },
+  "https://www.negociosenventa.es/compro-o-rento-negocio-funcionando-en-madrid-9572": {
+   "reason": "busqueda",
+   "date": "2026-10-15"
   }
  },
  "runs": [
@@ -1812,6 +1836,35 @@
      "nuevos": 57,
      "duplicados": 1,
      "descartados": 2,
+     "errores": 0,
+     "retirados": 0
+    },
+    {
+     "source": "bizalia",
+     "nuevos": 0,
+     "duplicados": 0,
+     "descartados": 0,
+     "errores": 1,
+     "retirados": 0
+    },
+    {
+     "source": "transmisionempresas",
+     "nuevos": 0,
+     "duplicados": 0,
+     "descartados": 0,
+     "errores": 0,
+     "retirados": 0
+    }
+   ]
+  },
+  {
+   "at": "2026-10-15T21:26:59+00:00",
+   "stats": [
+    {
+     "source": "negociosenventa",
+     "nuevos": 54,
+     "duplicados": 0,
+     "descartados": 6,
      "errores": 0,
      "retirados": 0
     },
