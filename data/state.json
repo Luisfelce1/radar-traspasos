@@ -459,6 +459,14 @@
   "https://www.negociosenventa.es/necesito-un-inversor-particular-en-malaga-10472": {
    "reason": "busqueda",
    "date": "2026-10-15"
+  },
+  "https://www.negociosenventa.es/fondos-de-inversion-para-proyectos-en-cadiz-5036": {
+   "reason": "busqueda",
+   "date": "2026-10-15"
+  },
+  "https://www.negociosenventa.es/prestamo-e-inversion-para-sus-proyectos-y-negocios-rentables-en-ciudad-real-7946": {
+   "reason": "busqueda",
+   "date": "2026-10-15"
   }
  },
  "runs": [
@@ -1775,6 +1783,35 @@
      "nuevos": 57,
      "duplicados": 0,
      "descartados": 3,
+     "errores": 0,
+     "retirados": 0
+    },
+    {
+     "source": "bizalia",
+     "nuevos": 0,
+     "duplicados": 0,
+     "descartados": 0,
+     "errores": 1,
+     "retirados": 0
+    },
+    {
+     "source": "transmisionempresas",
+     "nuevos": 0,
+     "duplicados": 0,
+     "descartados": 0,
+     "errores": 0,
+     "retirados": 0
+    }
+   ]
+  },
+  {
+   "at": "2026-10-15T17:04:26+00:00",
+   "stats": [
+    {
+     "source": "negociosenventa",
+     "nuevos": 57,
+     "duplicados": 1,
+     "descartados": 2,
      "errores": 0,
      "retirados": 0
     },
