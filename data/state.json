@@ -491,6 +491,26 @@
   "https://www.negociosenventa.es/compro-o-rento-negocio-funcionando-en-madrid-9572": {
    "reason": "busqueda",
    "date": "2026-10-15"
+  },
+  "https://www.negociosenventa.es/restaurante-con-chalet-en-malaga-4774": {
+   "reason": "inmueble",
+   "date": "2026-10-16"
+  },
+  "https://www.negociosenventa.es/se-busca-socio-trabajador-o-inversionita-en-valenciavalencia-11955": {
+   "reason": "busqueda",
+   "date": "2026-10-16"
+  },
+  "https://www.negociosenventa.es/busco-inversor-para-buffet-libre-en-barcelona-8282": {
+   "reason": "busqueda",
+   "date": "2026-10-16"
+  },
+  "https://www.negociosenventa.es/busco-socio-en-malaga-9261": {
+   "reason": "busqueda",
+   "date": "2026-10-16"
+  },
+  "https://www.negociosenventa.es/rexpods-vaper-cigarrillos-electronicos-de-sabores-buscamos-distribuidores-en-cadiz-9070": {
+   "reason": "busqueda",
+   "date": "2026-10-16"
   }
  },
  "runs": [
@@ -1865,6 +1885,35 @@
      "nuevos": 54,
      "duplicados": 0,
      "descartados": 6,
+     "errores": 0,
+     "retirados": 0
+    },
+    {
+     "source": "bizalia",
+     "nuevos": 0,
+     "duplicados": 0,
+     "descartados": 0,
+     "errores": 1,
+     "retirados": 0
+    },
+    {
+     "source": "transmisionempresas",
+     "nuevos": 0,
+     "duplicados": 0,
+     "descartados": 0,
+     "errores": 0,
+     "retirados": 0
+    }
+   ]
+  },
+  {
+   "at": "2026-10-16T04:35:24+00:00",
+   "stats": [
+    {
+     "source": "negociosenventa",
+     "nuevos": 55,
+     "duplicados": 0,
+     "descartados": 5,
      "errores": 0,
      "retirados": 0
     },
