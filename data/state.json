@@ -543,38 +543,21 @@
   "https://www.negociosenventa.es/este-hotel-no-sabe-de-momento-ningun-inversor-que-existe-en-caceres-12212": {
    "reason": "busqueda",
    "date": "2026-10-16"
+  },
+  "https://www.negociosenventa.es/socio-trabajador-en-barcelona-10023": {
+   "reason": "busqueda",
+   "date": "2026-10-16"
+  },
+  "https://www.negociosenventa.es/local-en-alquiler-cc-los-cisnes-de-jerez-de-la-frontera-en-cadiz-10188": {
+   "reason": "inmueble",
+   "date": "2026-10-16"
+  },
+  "https://www.negociosenventa.es/oportunidad-de-inversion-socio-capitalista-para-comparador-de-parking-en-aeropuertos-y-estaciones-en-madrid-9696": {
+   "reason": "busqueda",
+   "date": "2026-10-16"
   }
  },
  "runs": [
-  {
-   "at": "2026-09-30T22:27:05+00:00",
-   "stats": [
-    {
-     "source": "negociosenventa",
-     "nuevos": 59,
-     "duplicados": 0,
-     "descartados": 1,
-     "errores": 0,
-     "retirados": 0
-    },
-    {
-     "source": "bizalia",
-     "nuevos": 22,
-     "duplicados": 0,
-     "descartados": 8,
-     "errores": 0,
-     "retirados": 0
-    },
-    {
-     "source": "transmisionempresas",
-     "nuevos": 40,
-     "duplicados": 0,
-     "descartados": 0,
-     "errores": 0,
-     "retirados": 0
-    }
-   ]
-  },
   {
    "at": "2026-10-01T06:03:33+00:00",
    "stats": [
@@ -1975,6 +1958,35 @@
      "nuevos": 57,
      "duplicados": 1,
      "descartados": 2,
+     "errores": 0,
+     "retirados": 0
+    },
+    {
+     "source": "bizalia",
+     "nuevos": 0,
+     "duplicados": 0,
+     "descartados": 0,
+     "errores": 1,
+     "retirados": 0
+    },
+    {
+     "source": "transmisionempresas",
+     "nuevos": 0,
+     "duplicados": 0,
+     "descartados": 0,
+     "errores": 0,
+     "retirados": 0
+    }
+   ]
+  },
+  {
+   "at": "2026-10-16T21:11:32+00:00",
+   "stats": [
+    {
+     "source": "negociosenventa",
+     "nuevos": 57,
+     "duplicados": 0,
+     "descartados": 3,
      "errores": 0,
      "retirados": 0
     },
