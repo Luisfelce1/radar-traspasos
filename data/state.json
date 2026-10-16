@@ -511,6 +511,30 @@
   "https://www.negociosenventa.es/rexpods-vaper-cigarrillos-electronicos-de-sabores-buscamos-distribuidores-en-cadiz-9070": {
    "reason": "busqueda",
    "date": "2026-10-16"
+  },
+  "https://www.negociosenventa.es/financiacion-para-sus-proyectos-en-palmas-las-4853": {
+   "reason": "busqueda",
+   "date": "2026-10-16"
+  },
+  "https://www.negociosenventa.es/se-busca-socio-financiero-en-tarragona-10676": {
+   "reason": "busqueda",
+   "date": "2026-10-16"
+  },
+  "https://www.negociosenventa.es/se-busca-socio-i-nversor-para-explotacion-ecologica-de-aceite-de-oliva-virgen-extra-en-alicantealacant-11713": {
+   "reason": "busqueda",
+   "date": "2026-10-16"
+  },
+  "https://www.negociosenventa.es/se-busca-socio-inversor-electrica-en-palmas-las-10179": {
+   "reason": "busqueda",
+   "date": "2026-10-16"
+  },
+  "https://www.negociosenventa.es/buscamos-inversor-para-bar-en-toledo-12848": {
+   "reason": "busqueda",
+   "date": "2026-10-16"
+  },
+  "https://www.negociosenventa.es/bitcoin-mining-busco-inversor-en-alicantealacant-7043": {
+   "reason": "busqueda",
+   "date": "2026-10-16"
   }
  },
  "runs": [
@@ -1914,6 +1938,35 @@
      "nuevos": 55,
      "duplicados": 0,
      "descartados": 5,
+     "errores": 0,
+     "retirados": 0
+    },
+    {
+     "source": "bizalia",
+     "nuevos": 0,
+     "duplicados": 0,
+     "descartados": 0,
+     "errores": 1,
+     "retirados": 0
+    },
+    {
+     "source": "transmisionempresas",
+     "nuevos": 0,
+     "duplicados": 0,
+     "descartados": 0,
+     "errores": 0,
+     "retirados": 0
+    }
+   ]
+  },
+  {
+   "at": "2026-10-16T11:27:26+00:00",
+   "stats": [
+    {
+     "source": "negociosenventa",
+     "nuevos": 54,
+     "duplicados": 0,
+     "descartados": 6,
      "errores": 0,
      "retirados": 0
     },
