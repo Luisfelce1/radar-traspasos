@@ -535,38 +535,17 @@
   "https://www.negociosenventa.es/bitcoin-mining-busco-inversor-en-alicantealacant-7043": {
    "reason": "busqueda",
    "date": "2026-10-16"
+  },
+  "https://www.negociosenventa.es/nave-con-terreno-en-vilar-de-santos-en-ourense-11883": {
+   "reason": "inmueble",
+   "date": "2026-10-16"
+  },
+  "https://www.negociosenventa.es/este-hotel-no-sabe-de-momento-ningun-inversor-que-existe-en-caceres-12212": {
+   "reason": "busqueda",
+   "date": "2026-10-16"
   }
  },
  "runs": [
-  {
-   "at": "2026-09-30T18:11:46+00:00",
-   "stats": [
-    {
-     "source": "negociosenventa",
-     "nuevos": 59,
-     "duplicados": 0,
-     "descartados": 1,
-     "errores": 0,
-     "retirados": 0
-    },
-    {
-     "source": "bizalia",
-     "nuevos": 25,
-     "duplicados": 0,
-     "descartados": 5,
-     "errores": 0,
-     "retirados": 0
-    },
-    {
-     "source": "transmisionempresas",
-     "nuevos": 40,
-     "duplicados": 0,
-     "descartados": 0,
-     "errores": 0,
-     "retirados": 0
-    }
-   ]
-  },
   {
    "at": "2026-09-30T22:27:05+00:00",
    "stats": [
@@ -1967,6 +1946,35 @@
      "nuevos": 54,
      "duplicados": 0,
      "descartados": 6,
+     "errores": 0,
+     "retirados": 0
+    },
+    {
+     "source": "bizalia",
+     "nuevos": 0,
+     "duplicados": 0,
+     "descartados": 0,
+     "errores": 1,
+     "retirados": 0
+    },
+    {
+     "source": "transmisionempresas",
+     "nuevos": 0,
+     "duplicados": 0,
+     "descartados": 0,
+     "errores": 0,
+     "retirados": 0
+    }
+   ]
+  },
+  {
+   "at": "2026-10-16T16:43:16+00:00",
+   "stats": [
+    {
+     "source": "negociosenventa",
+     "nuevos": 57,
+     "duplicados": 1,
+     "descartados": 2,
      "errores": 0,
      "retirados": 0
     },
