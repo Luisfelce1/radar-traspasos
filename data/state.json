@@ -587,38 +587,17 @@
   "https://www.negociosenventa.es/busco-inversor-para-pasteleria-en-malaga-9656": {
    "reason": "busqueda",
    "date": "2026-10-17"
+  },
+  "https://www.negociosenventa.es/chalet-escuela-en-madrid-3610": {
+   "reason": "inmueble",
+   "date": "2026-10-17"
+  },
+  "https://www.negociosenventa.es/participaciones-en-sociedad-en-tarragona-12185": {
+   "reason": "busqueda",
+   "date": "2026-10-17"
   }
  },
  "runs": [
-  {
-   "at": "2026-10-02T05:45:34+00:00",
-   "stats": [
-    {
-     "source": "negociosenventa",
-     "nuevos": 55,
-     "duplicados": 1,
-     "descartados": 4,
-     "errores": 0,
-     "retirados": 0
-    },
-    {
-     "source": "bizalia",
-     "nuevos": 25,
-     "duplicados": 0,
-     "descartados": 5,
-     "errores": 0,
-     "retirados": 0
-    },
-    {
-     "source": "transmisionempresas",
-     "nuevos": 0,
-     "duplicados": 0,
-     "descartados": 0,
-     "errores": 0,
-     "retirados": 0
-    }
-   ]
-  },
   {
    "at": "2026-10-02T12:37:35+00:00",
    "stats": [
@@ -2018,6 +1997,35 @@
      "source": "negociosenventa",
      "nuevos": 58,
      "duplicados": 0,
+     "descartados": 2,
+     "errores": 0,
+     "retirados": 0
+    },
+    {
+     "source": "bizalia",
+     "nuevos": 0,
+     "duplicados": 0,
+     "descartados": 0,
+     "errores": 1,
+     "retirados": 0
+    },
+    {
+     "source": "transmisionempresas",
+     "nuevos": 0,
+     "duplicados": 0,
+     "descartados": 0,
+     "errores": 0,
+     "retirados": 0
+    }
+   ]
+  },
+  {
+   "at": "2026-10-17T20:40:14+00:00",
+   "stats": [
+    {
+     "source": "negociosenventa",
+     "nuevos": 57,
+     "duplicados": 1,
      "descartados": 2,
      "errores": 0,
      "retirados": 0
