@@ -555,38 +555,33 @@
   "https://www.negociosenventa.es/oportunidad-de-inversion-socio-capitalista-para-comparador-de-parking-en-aeropuertos-y-estaciones-en-madrid-9696": {
    "reason": "busqueda",
    "date": "2026-10-16"
+  },
+  "https://www.negociosenventa.es/busco-socio-inversor-para-restaurante-en-balears-illes-9508": {
+   "reason": "busqueda",
+   "date": "2026-10-17"
+  },
+  "https://www.negociosenventa.es/venta-de-restaurante-con-casa-de-campo-y-terreno-en-alicantealacant-9485": {
+   "reason": "inmueble",
+   "date": "2026-10-17"
+  },
+  "https://www.negociosenventa.es/socio-inversor-plataforma-digital-entretenimiento-adulto-en-madrid-9043": {
+   "reason": "busqueda",
+   "date": "2026-10-17"
+  },
+  "https://www.negociosenventa.es/buscamos-inversores-capitalistas-en-madrid-11157": {
+   "reason": "busqueda",
+   "date": "2026-10-17"
+  },
+  "https://www.negociosenventa.es/terreno-construccion-residencia-de-ancioanos-con-licencia-y-proyecto-en-madrid-10547": {
+   "reason": "inmueble",
+   "date": "2026-10-17"
+  },
+  "https://www.negociosenventa.es/busco-inversor-para-proyecto-hosteleria-en-madrid-11439": {
+   "reason": "busqueda",
+   "date": "2026-10-17"
   }
  },
  "runs": [
-  {
-   "at": "2026-10-01T13:24:28+00:00",
-   "stats": [
-    {
-     "source": "negociosenventa",
-     "nuevos": 60,
-     "duplicados": 0,
-     "descartados": 0,
-     "errores": 0,
-     "retirados": 0
-    },
-    {
-     "source": "bizalia",
-     "nuevos": 28,
-     "duplicados": 0,
-     "descartados": 2,
-     "errores": 0,
-     "retirados": 0
-    },
-    {
-     "source": "transmisionempresas",
-     "nuevos": 40,
-     "duplicados": 0,
-     "descartados": 0,
-     "errores": 0,
-     "retirados": 0
-    }
-   ]
-  },
   {
    "at": "2026-10-01T22:51:30+00:00",
    "stats": [
@@ -1989,6 +1984,35 @@
      "descartados": 0,
      "errores": 0,
      "retirados": 2
+    },
+    {
+     "source": "bizalia",
+     "nuevos": 0,
+     "duplicados": 0,
+     "descartados": 0,
+     "errores": 1,
+     "retirados": 0
+    },
+    {
+     "source": "transmisionempresas",
+     "nuevos": 0,
+     "duplicados": 0,
+     "descartados": 0,
+     "errores": 0,
+     "retirados": 0
+    }
+   ]
+  },
+  {
+   "at": "2026-10-17T10:47:10+00:00",
+   "stats": [
+    {
+     "source": "negociosenventa",
+     "nuevos": 54,
+     "duplicados": 0,
+     "descartados": 6,
+     "errores": 0,
+     "retirados": 0
     },
     {
      "source": "bizalia",
