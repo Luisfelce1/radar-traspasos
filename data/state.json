@@ -631,38 +631,21 @@
   "https://www.negociosenventa.es/edificio-residencial-en-venta-en-plaza-aragon-sn-cadrete-en-zaragoza-11276": {
    "reason": "inmueble",
    "date": "2026-10-18"
+  },
+  "https://www.negociosenventa.es/financiacion-oferta-de-prestamo-en-barcelona-11521": {
+   "reason": "busqueda",
+   "date": "2026-10-18"
+  },
+  "https://www.negociosenventa.es/local-en-alquiler-junto-a-plaza-de-espana-y-gran-via-en-madrid-11432": {
+   "reason": "inmueble",
+   "date": "2026-10-18"
+  },
+  "https://www.negociosenventa.es/inversion-para-tus-proyectos-en-avila-11407": {
+   "reason": "busqueda",
+   "date": "2026-10-18"
   }
  },
  "runs": [
-  {
-   "at": "2026-10-03T05:21:44+00:00",
-   "stats": [
-    {
-     "source": "negociosenventa",
-     "nuevos": 59,
-     "duplicados": 0,
-     "descartados": 1,
-     "errores": 0,
-     "retirados": 0
-    },
-    {
-     "source": "bizalia",
-     "nuevos": 0,
-     "duplicados": 0,
-     "descartados": 0,
-     "errores": 0,
-     "retirados": 0
-    },
-    {
-     "source": "transmisionempresas",
-     "nuevos": 0,
-     "duplicados": 0,
-     "descartados": 0,
-     "errores": 0,
-     "retirados": 0
-    }
-   ]
-  },
   {
    "at": "2026-10-03T11:42:15+00:00",
    "stats": [
@@ -2063,6 +2046,35 @@
      "nuevos": 52,
      "duplicados": 1,
      "descartados": 7,
+     "errores": 0,
+     "retirados": 0
+    },
+    {
+     "source": "bizalia",
+     "nuevos": 0,
+     "duplicados": 0,
+     "descartados": 0,
+     "errores": 1,
+     "retirados": 0
+    },
+    {
+     "source": "transmisionempresas",
+     "nuevos": 0,
+     "duplicados": 0,
+     "descartados": 0,
+     "errores": 0,
+     "retirados": 0
+    }
+   ]
+  },
+  {
+   "at": "2026-10-18T15:55:57+00:00",
+   "stats": [
+    {
+     "source": "negociosenventa",
+     "nuevos": 57,
+     "duplicados": 0,
+     "descartados": 3,
      "errores": 0,
      "retirados": 0
     },
