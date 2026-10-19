@@ -659,38 +659,13 @@
   "https://www.negociosenventa.es/buscamos-socio-inversor-para-ampliar-en-valenciavalencia-10969": {
    "reason": "busqueda",
    "date": "2026-10-18"
+  },
+  "https://www.negociosenventa.es/escuela-de-natacion-piscina-busco-en-traspaso-alquiler-o-compra-en-madrid-4561": {
+   "reason": "busqueda",
+   "date": "2026-10-19"
   }
  },
  "runs": [
-  {
-   "at": "2026-10-03T16:21:43+00:00",
-   "stats": [
-    {
-     "source": "negociosenventa",
-     "nuevos": 57,
-     "duplicados": 1,
-     "descartados": 2,
-     "errores": 0,
-     "retirados": 0
-    },
-    {
-     "source": "bizalia",
-     "nuevos": 0,
-     "duplicados": 0,
-     "descartados": 0,
-     "errores": 0,
-     "retirados": 0
-    },
-    {
-     "source": "transmisionempresas",
-     "nuevos": 0,
-     "duplicados": 0,
-     "descartados": 0,
-     "errores": 0,
-     "retirados": 0
-    }
-   ]
-  },
   {
    "at": "2026-10-03T21:17:29+00:00",
    "stats": [
@@ -2093,6 +2068,35 @@
      "descartados": 4,
      "errores": 0,
      "retirados": 0
+    },
+    {
+     "source": "bizalia",
+     "nuevos": 0,
+     "duplicados": 0,
+     "descartados": 0,
+     "errores": 1,
+     "retirados": 0
+    },
+    {
+     "source": "transmisionempresas",
+     "nuevos": 0,
+     "duplicados": 0,
+     "descartados": 0,
+     "errores": 0,
+     "retirados": 0
+    }
+   ]
+  },
+  {
+   "at": "2026-10-19T04:44:04+00:00",
+   "stats": [
+    {
+     "source": "negociosenventa",
+     "nuevos": 59,
+     "duplicados": 0,
+     "descartados": 1,
+     "errores": 0,
+     "retirados": 2
     },
     {
      "source": "bizalia",
