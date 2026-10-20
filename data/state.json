@@ -671,38 +671,17 @@
   "https://www.negociosenventa.es/inversores-para-centro-deportivo-en-madrid-9754": {
    "reason": "busqueda",
    "date": "2026-10-19"
+  },
+  "https://www.negociosenventa.es/socios-con-local-para-abrir-tiendas-mixmix-en-valenciavalencia-12815": {
+   "reason": "busqueda",
+   "date": "2026-10-20"
+  },
+  "https://www.negociosenventa.es/macro-discoteca-y-sala-de-fiestas-en-barcelona-7507": {
+   "reason": "inmueble",
+   "date": "2026-10-20"
   }
  },
  "runs": [
-  {
-   "at": "2026-10-04T12:24:06+00:00",
-   "stats": [
-    {
-     "source": "negociosenventa",
-     "nuevos": 59,
-     "duplicados": 0,
-     "descartados": 1,
-     "errores": 0,
-     "retirados": 0
-    },
-    {
-     "source": "bizalia",
-     "nuevos": 0,
-     "duplicados": 0,
-     "descartados": 0,
-     "errores": 0,
-     "retirados": 0
-    },
-    {
-     "source": "transmisionempresas",
-     "nuevos": 0,
-     "duplicados": 0,
-     "descartados": 0,
-     "errores": 0,
-     "retirados": 0
-    }
-   ]
-  },
   {
    "at": "2026-10-04T21:27:32+00:00",
    "stats": [
@@ -2103,6 +2082,35 @@
      "nuevos": 58,
      "duplicados": 1,
      "descartados": 1,
+     "errores": 0,
+     "retirados": 0
+    },
+    {
+     "source": "bizalia",
+     "nuevos": 0,
+     "duplicados": 0,
+     "descartados": 0,
+     "errores": 1,
+     "retirados": 0
+    },
+    {
+     "source": "transmisionempresas",
+     "nuevos": 0,
+     "duplicados": 0,
+     "descartados": 0,
+     "errores": 0,
+     "retirados": 0
+    }
+   ]
+  },
+  {
+   "at": "2026-10-20T04:56:20+00:00",
+   "stats": [
+    {
+     "source": "negociosenventa",
+     "nuevos": 58,
+     "duplicados": 0,
+     "descartados": 2,
      "errores": 0,
      "retirados": 0
     },
