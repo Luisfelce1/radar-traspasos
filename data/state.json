@@ -711,38 +711,21 @@
   "https://www.negociosenventa.es/socio-inversor-en-santa-cruz-de-tenerife-2106": {
    "reason": "busqueda",
    "date": "2026-10-21"
+  },
+  "https://www.negociosenventa.es/compramos-empresas-de-facility-service-en-madrid-5516": {
+   "reason": "busqueda",
+   "date": "2026-10-21"
+  },
+  "https://www.negociosenventa.es/empresa-venta-online-precisa-socios-en-cantabria-7592": {
+   "reason": "busqueda",
+   "date": "2026-10-21"
+  },
+  "https://www.negociosenventa.es/fondo-de-inversion-para-proyectos-rentables-en-guadalajara-9570": {
+   "reason": "busqueda",
+   "date": "2026-10-21"
   }
  },
  "runs": [
-  {
-   "at": "2026-10-07T06:02:19+00:00",
-   "stats": [
-    {
-     "source": "negociosenventa",
-     "nuevos": 56,
-     "duplicados": 1,
-     "descartados": 3,
-     "errores": 0,
-     "retirados": 1
-    },
-    {
-     "source": "bizalia",
-     "nuevos": 0,
-     "duplicados": 0,
-     "descartados": 0,
-     "errores": 0,
-     "retirados": 0
-    },
-    {
-     "source": "transmisionempresas",
-     "nuevos": 0,
-     "duplicados": 0,
-     "descartados": 0,
-     "errores": 0,
-     "retirados": 0
-    }
-   ]
-  },
   {
    "at": "2026-10-07T13:25:59+00:00",
    "stats": [
@@ -2142,6 +2125,35 @@
      "source": "negociosenventa",
      "nuevos": 57,
      "duplicados": 0,
+     "descartados": 3,
+     "errores": 0,
+     "retirados": 0
+    },
+    {
+     "source": "bizalia",
+     "nuevos": 0,
+     "duplicados": 0,
+     "descartados": 0,
+     "errores": 0,
+     "retirados": 0
+    },
+    {
+     "source": "transmisionempresas",
+     "nuevos": 0,
+     "duplicados": 0,
+     "descartados": 0,
+     "errores": 0,
+     "retirados": 0
+    }
+   ]
+  },
+  {
+   "at": "2026-10-21T21:45:39+00:00",
+   "stats": [
+    {
+     "source": "negociosenventa",
+     "nuevos": 56,
+     "duplicados": 1,
      "descartados": 3,
      "errores": 0,
      "retirados": 0
