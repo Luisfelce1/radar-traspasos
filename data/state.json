@@ -699,38 +699,21 @@
   "https://www.negociosenventa.es/buscamos-inversor-para-vender-los-autos-del-futuro-en-europa-en-malaga-9349": {
    "reason": "busqueda",
    "date": "2026-10-21"
+  },
+  "https://www.negociosenventa.es/se-busca-inversor-socio-capitalista-en-lleida-6508": {
+   "reason": "busqueda",
+   "date": "2026-10-21"
+  },
+  "https://www.negociosenventa.es/se-busca-socio-capitalista-o-inversor-para-negocio-de-aviacion-ejecutiva-y-servicios-vip-en-madrid-5549": {
+   "reason": "busqueda",
+   "date": "2026-10-21"
+  },
+  "https://www.negociosenventa.es/socio-inversor-en-santa-cruz-de-tenerife-2106": {
+   "reason": "busqueda",
+   "date": "2026-10-21"
   }
  },
  "runs": [
-  {
-   "at": "2026-10-06T18:25:26+00:00",
-   "stats": [
-    {
-     "source": "negociosenventa",
-     "nuevos": 56,
-     "duplicados": 1,
-     "descartados": 3,
-     "errores": 0,
-     "retirados": 0
-    },
-    {
-     "source": "bizalia",
-     "nuevos": 0,
-     "duplicados": 0,
-     "descartados": 0,
-     "errores": 0,
-     "retirados": 0
-    },
-    {
-     "source": "transmisionempresas",
-     "nuevos": 0,
-     "duplicados": 0,
-     "descartados": 0,
-     "errores": 0,
-     "retirados": 0
-    }
-   ]
-  },
   {
    "at": "2026-10-07T06:02:19+00:00",
    "stats": [
@@ -2140,6 +2123,35 @@
      "duplicados": 0,
      "descartados": 0,
      "errores": 1,
+     "retirados": 0
+    },
+    {
+     "source": "transmisionempresas",
+     "nuevos": 0,
+     "duplicados": 0,
+     "descartados": 0,
+     "errores": 0,
+     "retirados": 0
+    }
+   ]
+  },
+  {
+   "at": "2026-10-21T17:14:47+00:00",
+   "stats": [
+    {
+     "source": "negociosenventa",
+     "nuevos": 57,
+     "duplicados": 0,
+     "descartados": 3,
+     "errores": 0,
+     "retirados": 0
+    },
+    {
+     "source": "bizalia",
+     "nuevos": 0,
+     "duplicados": 0,
+     "descartados": 0,
+     "errores": 0,
      "retirados": 0
     },
     {
