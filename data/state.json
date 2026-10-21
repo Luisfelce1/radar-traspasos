@@ -691,38 +691,17 @@
   "https://www.negociosenventa.es/busco-socio-para-consultoria-de-formacion-centro-de-formacion-en-madrid-2058": {
    "reason": "busqueda",
    "date": "2026-10-20"
+  },
+  "https://www.negociosenventa.es/busco-socio-para-negocio-baby-rentacar-marbella-en-malaga-3787": {
+   "reason": "busqueda",
+   "date": "2026-10-21"
+  },
+  "https://www.negociosenventa.es/buscamos-inversor-para-vender-los-autos-del-futuro-en-europa-en-malaga-9349": {
+   "reason": "busqueda",
+   "date": "2026-10-21"
   }
  },
  "runs": [
-  {
-   "at": "2026-10-06T06:23:34+00:00",
-   "stats": [
-    {
-     "source": "negociosenventa",
-     "nuevos": 59,
-     "duplicados": 0,
-     "descartados": 1,
-     "errores": 0,
-     "retirados": 0
-    },
-    {
-     "source": "bizalia",
-     "nuevos": 0,
-     "duplicados": 0,
-     "descartados": 0,
-     "errores": 0,
-     "retirados": 0
-    },
-    {
-     "source": "transmisionempresas",
-     "nuevos": 0,
-     "duplicados": 0,
-     "descartados": 0,
-     "errores": 0,
-     "retirados": 0
-    }
-   ]
-  },
   {
    "at": "2026-10-06T18:25:26+00:00",
    "stats": [
@@ -2129,6 +2108,35 @@
     {
      "source": "bizalia",
      "nuevos": 0,
+     "duplicados": 0,
+     "descartados": 0,
+     "errores": 1,
+     "retirados": 0
+    },
+    {
+     "source": "transmisionempresas",
+     "nuevos": 0,
+     "duplicados": 0,
+     "descartados": 0,
+     "errores": 0,
+     "retirados": 0
+    }
+   ]
+  },
+  {
+   "at": "2026-10-21T11:54:39+00:00",
+   "stats": [
+    {
+     "source": "negociosenventa",
+     "nuevos": 58,
+     "duplicados": 0,
+     "descartados": 2,
+     "errores": 0,
+     "retirados": 0
+    },
+    {
+     "source": "bizalia",
+     "nuevos": 1,
      "duplicados": 0,
      "descartados": 0,
      "errores": 1,
