@@ -775,38 +775,17 @@
   "https://www.negociosenventa.es/urge-socio-capitalista-en-ourense-6873": {
    "reason": "busqueda",
    "date": "2026-10-22"
+  },
+  "https://www.negociosenventa.es/inversor-para-cadena-heladerias-nacional-en-tarragona-2815": {
+   "reason": "busqueda",
+   "date": "2026-10-22"
+  },
+  "https://www.negociosenventa.es/busco-socio-inversor-en-alicantealacant-4836": {
+   "reason": "busqueda",
+   "date": "2026-10-22"
   }
  },
  "runs": [
-  {
-   "at": "2026-10-08T06:06:44+00:00",
-   "stats": [
-    {
-     "source": "negociosenventa",
-     "nuevos": 53,
-     "duplicados": 2,
-     "descartados": 5,
-     "errores": 0,
-     "retirados": 2
-    },
-    {
-     "source": "bizalia",
-     "nuevos": 0,
-     "duplicados": 0,
-     "descartados": 0,
-     "errores": 0,
-     "retirados": 0
-    },
-    {
-     "source": "transmisionempresas",
-     "nuevos": 0,
-     "duplicados": 0,
-     "descartados": 0,
-     "errores": 0,
-     "retirados": 0
-    }
-   ]
-  },
   {
    "at": "2026-10-08T13:37:21+00:00",
    "stats": [
@@ -2207,6 +2186,35 @@
      "nuevos": 50,
      "duplicados": 0,
      "descartados": 10,
+     "errores": 0,
+     "retirados": 0
+    },
+    {
+     "source": "bizalia",
+     "nuevos": 0,
+     "duplicados": 0,
+     "descartados": 0,
+     "errores": 1,
+     "retirados": 0
+    },
+    {
+     "source": "transmisionempresas",
+     "nuevos": 0,
+     "duplicados": 0,
+     "descartados": 0,
+     "errores": 0,
+     "retirados": 0
+    }
+   ]
+  },
+  {
+   "at": "2026-10-22T17:19:11+00:00",
+   "stats": [
+    {
+     "source": "negociosenventa",
+     "nuevos": 57,
+     "duplicados": 1,
+     "descartados": 2,
      "errores": 0,
      "retirados": 0
     },
