@@ -723,38 +723,21 @@
   "https://www.negociosenventa.es/fondo-de-inversion-para-proyectos-rentables-en-guadalajara-9570": {
    "reason": "busqueda",
    "date": "2026-10-21"
+  },
+  "https://www.negociosenventa.es/traspaso-de-peluqueria-en-aguilas-en-murcia-4827": {
+   "reason": "busqueda",
+   "date": "2026-10-22"
+  },
+  "https://www.negociosenventa.es/socio-correduria-de-seguros-en-madrid-9431": {
+   "reason": "busqueda",
+   "date": "2026-10-22"
+  },
+  "https://www.negociosenventa.es/busco-proyectos-de-inversion-en-barcelona-10220": {
+   "reason": "busqueda",
+   "date": "2026-10-22"
   }
  },
  "runs": [
-  {
-   "at": "2026-10-07T13:25:59+00:00",
-   "stats": [
-    {
-     "source": "negociosenventa",
-     "nuevos": 56,
-     "duplicados": 0,
-     "descartados": 4,
-     "errores": 0,
-     "retirados": 0
-    },
-    {
-     "source": "bizalia",
-     "nuevos": 0,
-     "duplicados": 0,
-     "descartados": 0,
-     "errores": 0,
-     "retirados": 0
-    },
-    {
-     "source": "transmisionempresas",
-     "nuevos": 0,
-     "duplicados": 0,
-     "descartados": 0,
-     "errores": 0,
-     "retirados": 0
-    }
-   ]
-  },
   {
    "at": "2026-10-07T23:08:50+00:00",
    "stats": [
@@ -2157,6 +2140,35 @@
      "descartados": 3,
      "errores": 0,
      "retirados": 0
+    },
+    {
+     "source": "bizalia",
+     "nuevos": 0,
+     "duplicados": 0,
+     "descartados": 0,
+     "errores": 0,
+     "retirados": 0
+    },
+    {
+     "source": "transmisionempresas",
+     "nuevos": 0,
+     "duplicados": 0,
+     "descartados": 0,
+     "errores": 0,
+     "retirados": 0
+    }
+   ]
+  },
+  {
+   "at": "2026-10-22T04:46:52+00:00",
+   "stats": [
+    {
+     "source": "negociosenventa",
+     "nuevos": 57,
+     "duplicados": 0,
+     "descartados": 3,
+     "errores": 0,
+     "retirados": 6
     },
     {
      "source": "bizalia",
