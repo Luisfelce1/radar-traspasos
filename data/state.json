@@ -735,38 +735,49 @@
   "https://www.negociosenventa.es/busco-proyectos-de-inversion-en-barcelona-10220": {
    "reason": "busqueda",
    "date": "2026-10-22"
+  },
+  "https://www.negociosenventa.es/busco-socio-hostelero-en-sevilla-10606": {
+   "reason": "busqueda",
+   "date": "2026-10-22"
+  },
+  "https://www.negociosenventa.es/busco-socio-en-sevilla-10884": {
+   "reason": "busqueda",
+   "date": "2026-10-22"
+  },
+  "https://www.negociosenventa.es/compro-negocios-en-bizkaia-4878": {
+   "reason": "busqueda",
+   "date": "2026-10-22"
+  },
+  "https://www.negociosenventa.es/esquema-de-inversion-para-la-financiacion-de-proyectos-en-asturias-8466": {
+   "reason": "busqueda",
+   "date": "2026-10-22"
+  },
+  "https://www.negociosenventa.es/busco-inversiones-en-murcia-9250": {
+   "reason": "busqueda",
+   "date": "2026-10-22"
+  },
+  "https://www.negociosenventa.es/se-busca-socio-inversor-a-mediolargo-plazo-en-tarragona-7788": {
+   "reason": "busqueda",
+   "date": "2026-10-22"
+  },
+  "https://www.negociosenventa.es/busco-socio-en-madrid-4954": {
+   "reason": "busqueda",
+   "date": "2026-10-22"
+  },
+  "https://www.negociosenventa.es/buscamos-inversion-para-proyecto-de-quesos-artesanos-100k-en-madrid-4263": {
+   "reason": "busqueda",
+   "date": "2026-10-22"
+  },
+  "https://www.negociosenventa.es/busco-socio-inversor-en-sevilla-7254": {
+   "reason": "busqueda",
+   "date": "2026-10-22"
+  },
+  "https://www.negociosenventa.es/urge-socio-capitalista-en-ourense-6873": {
+   "reason": "busqueda",
+   "date": "2026-10-22"
   }
  },
  "runs": [
-  {
-   "at": "2026-10-07T23:08:50+00:00",
-   "stats": [
-    {
-     "source": "negociosenventa",
-     "nuevos": 57,
-     "duplicados": 0,
-     "descartados": 3,
-     "errores": 0,
-     "retirados": 0
-    },
-    {
-     "source": "bizalia",
-     "nuevos": 0,
-     "duplicados": 0,
-     "descartados": 0,
-     "errores": 0,
-     "retirados": 0
-    },
-    {
-     "source": "transmisionempresas",
-     "nuevos": 0,
-     "duplicados": 0,
-     "descartados": 0,
-     "errores": 0,
-     "retirados": 0
-    }
-   ]
-  },
   {
    "at": "2026-10-08T06:06:44+00:00",
    "stats": [
@@ -2176,6 +2187,35 @@
      "duplicados": 0,
      "descartados": 0,
      "errores": 0,
+     "retirados": 0
+    },
+    {
+     "source": "transmisionempresas",
+     "nuevos": 0,
+     "duplicados": 0,
+     "descartados": 0,
+     "errores": 0,
+     "retirados": 0
+    }
+   ]
+  },
+  {
+   "at": "2026-10-22T11:57:53+00:00",
+   "stats": [
+    {
+     "source": "negociosenventa",
+     "nuevos": 50,
+     "duplicados": 0,
+     "descartados": 10,
+     "errores": 0,
+     "retirados": 0
+    },
+    {
+     "source": "bizalia",
+     "nuevos": 0,
+     "duplicados": 0,
+     "descartados": 0,
+     "errores": 1,
      "retirados": 0
     },
     {
