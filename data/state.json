@@ -811,38 +811,17 @@
   "https://www.negociosenventa.es/socio-emprendedor-hotel-casa-rural-o-restaurante-en-girona-10778": {
    "reason": "busqueda",
    "date": "2026-10-23"
+  },
+  "https://www.negociosenventa.es/busco-inversor-en-murcia-10196": {
+   "reason": "busqueda",
+   "date": "2026-10-23"
+  },
+  "https://www.negociosenventa.es/socio-para-empresa-de-madera-en-valenciavalencia-9616": {
+   "reason": "busqueda",
+   "date": "2026-10-23"
   }
  },
  "runs": [
-  {
-   "at": "2026-10-09T13:19:54+00:00",
-   "stats": [
-    {
-     "source": "negociosenventa",
-     "nuevos": 58,
-     "duplicados": 0,
-     "descartados": 2,
-     "errores": 0,
-     "retirados": 0
-    },
-    {
-     "source": "bizalia",
-     "nuevos": 0,
-     "duplicados": 0,
-     "descartados": 0,
-     "errores": 0,
-     "retirados": 0
-    },
-    {
-     "source": "transmisionempresas",
-     "nuevos": 0,
-     "duplicados": 0,
-     "descartados": 0,
-     "errores": 0,
-     "retirados": 0
-    }
-   ]
-  },
   {
    "at": "2026-10-09T22:42:21+00:00",
    "stats": [
@@ -2243,6 +2222,35 @@
      "nuevos": 52,
      "duplicados": 3,
      "descartados": 5,
+     "errores": 0,
+     "retirados": 0
+    },
+    {
+     "source": "bizalia",
+     "nuevos": 0,
+     "duplicados": 0,
+     "descartados": 0,
+     "errores": 1,
+     "retirados": 0
+    },
+    {
+     "source": "transmisionempresas",
+     "nuevos": 0,
+     "duplicados": 0,
+     "descartados": 0,
+     "errores": 0,
+     "retirados": 0
+    }
+   ]
+  },
+  {
+   "at": "2026-10-23T17:12:56+00:00",
+   "stats": [
+    {
+     "source": "negociosenventa",
+     "nuevos": 57,
+     "duplicados": 1,
+     "descartados": 2,
      "errores": 0,
      "retirados": 0
     },
