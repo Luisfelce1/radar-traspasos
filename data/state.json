@@ -843,38 +843,21 @@
   "https://www.negociosenventa.es/terreno-industial-en-venta-en-madrid-8382": {
    "reason": "inmueble",
    "date": "2026-10-23"
+  },
+  "https://www.negociosenventa.es/busco-socio-capitalista-para-hacer-trading-en-forex-en-madrid-7866": {
+   "reason": "busqueda",
+   "date": "2026-10-24"
+  },
+  "https://www.negociosenventa.es/traspaso-restaurante-el-terreno-santa-catalina-en-balears-illes-2744": {
+   "reason": "inmueble",
+   "date": "2026-10-24"
+  },
+  "https://www.negociosenventa.es/socio-comercial-para-proyecto-editorial-en-madrid-3591": {
+   "reason": "busqueda",
+   "date": "2026-10-24"
   }
  },
  "runs": [
-  {
-   "at": "2026-10-10T05:56:05+00:00",
-   "stats": [
-    {
-     "source": "negociosenventa",
-     "nuevos": 60,
-     "duplicados": 0,
-     "descartados": 0,
-     "errores": 0,
-     "retirados": 0
-    },
-    {
-     "source": "bizalia",
-     "nuevos": 0,
-     "duplicados": 0,
-     "descartados": 0,
-     "errores": 1,
-     "retirados": 0
-    },
-    {
-     "source": "transmisionempresas",
-     "nuevos": 0,
-     "duplicados": 0,
-     "descartados": 0,
-     "errores": 0,
-     "retirados": 0
-    }
-   ]
-  },
   {
    "at": "2026-10-10T12:33:23+00:00",
    "stats": [
@@ -2277,6 +2260,35 @@
      "descartados": 6,
      "errores": 0,
      "retirados": 0
+    },
+    {
+     "source": "bizalia",
+     "nuevos": 0,
+     "duplicados": 0,
+     "descartados": 0,
+     "errores": 1,
+     "retirados": 0
+    },
+    {
+     "source": "transmisionempresas",
+     "nuevos": 0,
+     "duplicados": 0,
+     "descartados": 0,
+     "errores": 0,
+     "retirados": 0
+    }
+   ]
+  },
+  {
+   "at": "2026-10-24T04:42:38+00:00",
+   "stats": [
+    {
+     "source": "negociosenventa",
+     "nuevos": 54,
+     "duplicados": 3,
+     "descartados": 3,
+     "errores": 0,
+     "retirados": 3
     },
     {
      "source": "bizalia",
