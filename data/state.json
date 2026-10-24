@@ -867,38 +867,13 @@
   "https://www.negociosenventa.es/compramos-su-empresa-lotes-guardamuebl-en-barcelona-4118": {
    "reason": "busqueda",
    "date": "2026-10-24"
+  },
+  "https://www.negociosenventa.es/buscamos-inversores-en-lugo-7918": {
+   "reason": "busqueda",
+   "date": "2026-10-24"
   }
  },
  "runs": [
-  {
-   "at": "2026-10-11T05:49:45+00:00",
-   "stats": [
-    {
-     "source": "negociosenventa",
-     "nuevos": 55,
-     "duplicados": 2,
-     "descartados": 3,
-     "errores": 0,
-     "retirados": 0
-    },
-    {
-     "source": "bizalia",
-     "nuevos": 0,
-     "duplicados": 0,
-     "descartados": 0,
-     "errores": 1,
-     "retirados": 0
-    },
-    {
-     "source": "transmisionempresas",
-     "nuevos": 0,
-     "duplicados": 0,
-     "descartados": 0,
-     "errores": 0,
-     "retirados": 0
-    }
-   ]
-  },
   {
    "at": "2026-10-11T12:52:51+00:00",
    "stats": [
@@ -2298,6 +2273,35 @@
      "source": "negociosenventa",
      "nuevos": 58,
      "duplicados": 1,
+     "descartados": 1,
+     "errores": 0,
+     "retirados": 0
+    },
+    {
+     "source": "bizalia",
+     "nuevos": 0,
+     "duplicados": 0,
+     "descartados": 0,
+     "errores": 1,
+     "retirados": 0
+    },
+    {
+     "source": "transmisionempresas",
+     "nuevos": 0,
+     "duplicados": 0,
+     "descartados": 0,
+     "errores": 0,
+     "retirados": 0
+    }
+   ]
+  },
+  {
+   "at": "2026-10-24T20:55:35+00:00",
+   "stats": [
+    {
+     "source": "negociosenventa",
+     "nuevos": 59,
+     "duplicados": 0,
      "descartados": 1,
      "errores": 0,
      "retirados": 0
