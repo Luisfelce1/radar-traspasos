@@ -891,38 +891,13 @@
   "https://www.negociosenventa.es/buscamos-socios-inversores-para-expandir-nuestra-red-en-valenciavalencia-2056": {
    "reason": "busqueda",
    "date": "2026-10-25"
+  },
+  "https://www.negociosenventa.es/busco-socio-en-murcia-en-murcia-3054": {
+   "reason": "busqueda",
+   "date": "2026-10-25"
   }
  },
  "runs": [
-  {
-   "at": "2026-10-12T06:00:47+00:00",
-   "stats": [
-    {
-     "source": "negociosenventa",
-     "nuevos": 58,
-     "duplicados": 0,
-     "descartados": 2,
-     "errores": 0,
-     "retirados": 0
-    },
-    {
-     "source": "bizalia",
-     "nuevos": 0,
-     "duplicados": 0,
-     "descartados": 0,
-     "errores": 1,
-     "retirados": 0
-    },
-    {
-     "source": "transmisionempresas",
-     "nuevos": 0,
-     "duplicados": 0,
-     "descartados": 0,
-     "errores": 0,
-     "retirados": 0
-    }
-   ]
-  },
   {
    "at": "2026-10-12T15:27:44+00:00",
    "stats": [
@@ -2323,6 +2298,35 @@
      "nuevos": 55,
      "duplicados": 2,
      "descartados": 3,
+     "errores": 0,
+     "retirados": 0
+    },
+    {
+     "source": "bizalia",
+     "nuevos": 0,
+     "duplicados": 0,
+     "descartados": 0,
+     "errores": 1,
+     "retirados": 0
+    },
+    {
+     "source": "transmisionempresas",
+     "nuevos": 0,
+     "duplicados": 0,
+     "descartados": 0,
+     "errores": 0,
+     "retirados": 0
+    }
+   ]
+  },
+  {
+   "at": "2026-10-25T16:24:16+00:00",
+   "stats": [
+    {
+     "source": "negociosenventa",
+     "nuevos": 58,
+     "duplicados": 1,
+     "descartados": 1,
      "errores": 0,
      "retirados": 0
     },
