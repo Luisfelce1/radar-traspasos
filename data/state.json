@@ -871,38 +871,17 @@
   "https://www.negociosenventa.es/buscamos-inversores-en-lugo-7918": {
    "reason": "busqueda",
    "date": "2026-10-24"
+  },
+  "https://www.negociosenventa.es/busco-socio-capitalista-para-negocio-de-aviacion-vip-en-madrid-4694": {
+   "reason": "busqueda",
+   "date": "2026-10-25"
+  },
+  "https://www.negociosenventa.es/buscamos-inversor-privado-construccion-viviendas-sostenibles-y-pasivas-en-madrid-3444": {
+   "reason": "busqueda",
+   "date": "2026-10-25"
   }
  },
  "runs": [
-  {
-   "at": "2026-10-11T12:52:51+00:00",
-   "stats": [
-    {
-     "source": "negociosenventa",
-     "nuevos": 56,
-     "duplicados": 1,
-     "descartados": 3,
-     "errores": 0,
-     "retirados": 0
-    },
-    {
-     "source": "bizalia",
-     "nuevos": 0,
-     "duplicados": 0,
-     "descartados": 0,
-     "errores": 1,
-     "retirados": 0
-    },
-    {
-     "source": "transmisionempresas",
-     "nuevos": 0,
-     "duplicados": 0,
-     "descartados": 0,
-     "errores": 0,
-     "retirados": 0
-    }
-   ]
-  },
   {
    "at": "2026-10-11T22:01:52+00:00",
    "stats": [
@@ -2303,6 +2282,35 @@
      "nuevos": 59,
      "duplicados": 0,
      "descartados": 1,
+     "errores": 0,
+     "retirados": 0
+    },
+    {
+     "source": "bizalia",
+     "nuevos": 0,
+     "duplicados": 0,
+     "descartados": 0,
+     "errores": 1,
+     "retirados": 0
+    },
+    {
+     "source": "transmisionempresas",
+     "nuevos": 0,
+     "duplicados": 0,
+     "descartados": 0,
+     "errores": 0,
+     "retirados": 0
+    }
+   ]
+  },
+  {
+   "at": "2026-10-25T04:47:14+00:00",
+   "stats": [
+    {
+     "source": "negociosenventa",
+     "nuevos": 58,
+     "duplicados": 0,
+     "descartados": 2,
      "errores": 0,
      "retirados": 0
     },
