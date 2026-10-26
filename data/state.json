@@ -919,38 +919,13 @@
   "https://www.negociosenventa.es/busco-socio-para-expansion-en-sevilla-1163": {
    "reason": "busqueda",
    "date": "2026-10-26"
+  },
+  "https://www.negociosenventa.es/centro-residencial-geriatrico-en-sevilla-1775": {
+   "reason": "inmueble",
+   "date": "2026-10-26"
   }
  },
  "runs": [
-  {
-   "at": "2026-10-13T22:48:55+00:00",
-   "stats": [
-    {
-     "source": "negociosenventa",
-     "nuevos": 60,
-     "duplicados": 0,
-     "descartados": 0,
-     "errores": 0,
-     "retirados": 0
-    },
-    {
-     "source": "bizalia",
-     "nuevos": 1,
-     "duplicados": 0,
-     "descartados": 0,
-     "errores": 1,
-     "retirados": 0
-    },
-    {
-     "source": "transmisionempresas",
-     "nuevos": 0,
-     "duplicados": 0,
-     "descartados": 0,
-     "errores": 0,
-     "retirados": 0
-    }
-   ]
-  },
   {
    "at": "2026-10-14T04:56:41+00:00",
    "stats": [
@@ -2358,6 +2333,35 @@
      "source": "bizalia",
      "nuevos": 0,
      "duplicados": 2,
+     "descartados": 0,
+     "errores": 1,
+     "retirados": 0
+    },
+    {
+     "source": "transmisionempresas",
+     "nuevos": 0,
+     "duplicados": 0,
+     "descartados": 0,
+     "errores": 0,
+     "retirados": 0
+    }
+   ]
+  },
+  {
+   "at": "2026-10-26T22:47:29+00:00",
+   "stats": [
+    {
+     "source": "negociosenventa",
+     "nuevos": 59,
+     "duplicados": 0,
+     "descartados": 1,
+     "errores": 0,
+     "retirados": 0
+    },
+    {
+     "source": "bizalia",
+     "nuevos": 1,
+     "duplicados": 0,
      "descartados": 0,
      "errores": 1,
      "retirados": 0
