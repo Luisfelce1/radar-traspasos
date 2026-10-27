@@ -931,38 +931,21 @@
   "https://www.negociosenventa.es/venta-de-terrenos-salina-y-criaderos-para-acuicultura-en-cadiz-7009": {
    "reason": "inmueble",
    "date": "2026-10-27"
+  },
+  "https://www.negociosenventa.es/socios-inversores-en-malaga-4416": {
+   "reason": "busqueda",
+   "date": "2026-10-27"
+  },
+  "https://www.negociosenventa.es/busco-socio-capitalista-o-finaciacion-en-bizkaia-3072": {
+   "reason": "busqueda",
+   "date": "2026-10-27"
+  },
+  "https://www.negociosenventa.es/venta-empresa-de-suplementos-nutricionales-alta-gama-en-girona-2881": {
+   "reason": "busqueda",
+   "date": "2026-10-27"
   }
  },
  "runs": [
-  {
-   "at": "2026-10-14T21:44:57+00:00",
-   "stats": [
-    {
-     "source": "negociosenventa",
-     "nuevos": 58,
-     "duplicados": 0,
-     "descartados": 2,
-     "errores": 0,
-     "retirados": 0
-    },
-    {
-     "source": "bizalia",
-     "nuevos": 0,
-     "duplicados": 0,
-     "descartados": 0,
-     "errores": 1,
-     "retirados": 0
-    },
-    {
-     "source": "transmisionempresas",
-     "nuevos": 0,
-     "duplicados": 0,
-     "descartados": 0,
-     "errores": 0,
-     "retirados": 0
-    }
-   ]
-  },
   {
    "at": "2026-10-15T04:42:12+00:00",
    "stats": [
@@ -2369,6 +2352,35 @@
     {
      "source": "bizalia",
      "nuevos": 3,
+     "duplicados": 0,
+     "descartados": 0,
+     "errores": 1,
+     "retirados": 0
+    },
+    {
+     "source": "transmisionempresas",
+     "nuevos": 0,
+     "duplicados": 0,
+     "descartados": 0,
+     "errores": 0,
+     "retirados": 0
+    }
+   ]
+  },
+  {
+   "at": "2026-10-27T22:21:01+00:00",
+   "stats": [
+    {
+     "source": "negociosenventa",
+     "nuevos": 55,
+     "duplicados": 2,
+     "descartados": 3,
+     "errores": 0,
+     "retirados": 0
+    },
+    {
+     "source": "bizalia",
+     "nuevos": 0,
      "duplicados": 0,
      "descartados": 0,
      "errores": 1,
