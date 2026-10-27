@@ -923,38 +923,13 @@
   "https://www.negociosenventa.es/centro-residencial-geriatrico-en-sevilla-1775": {
    "reason": "inmueble",
    "date": "2026-10-26"
+  },
+  "https://www.negociosenventa.es/busco-socio-clinica-de-fertilidad-en-madrid-1268": {
+   "reason": "busqueda",
+   "date": "2026-10-27"
   }
  },
  "runs": [
-  {
-   "at": "2026-10-14T04:56:41+00:00",
-   "stats": [
-    {
-     "source": "negociosenventa",
-     "nuevos": 55,
-     "duplicados": 1,
-     "descartados": 4,
-     "errores": 0,
-     "retirados": 0
-    },
-    {
-     "source": "bizalia",
-     "nuevos": 0,
-     "duplicados": 0,
-     "descartados": 0,
-     "errores": 1,
-     "retirados": 0
-    },
-    {
-     "source": "transmisionempresas",
-     "nuevos": 0,
-     "duplicados": 0,
-     "descartados": 0,
-     "errores": 0,
-     "retirados": 0
-    }
-   ]
-  },
   {
    "at": "2026-10-14T11:55:11+00:00",
    "stats": [
@@ -2361,6 +2336,35 @@
     {
      "source": "bizalia",
      "nuevos": 1,
+     "duplicados": 0,
+     "descartados": 0,
+     "errores": 1,
+     "retirados": 0
+    },
+    {
+     "source": "transmisionempresas",
+     "nuevos": 0,
+     "duplicados": 0,
+     "descartados": 0,
+     "errores": 0,
+     "retirados": 0
+    }
+   ]
+  },
+  {
+   "at": "2026-10-27T05:10:53+00:00",
+   "stats": [
+    {
+     "source": "negociosenventa",
+     "nuevos": 57,
+     "duplicados": 2,
+     "descartados": 1,
+     "errores": 0,
+     "retirados": 4
+    },
+    {
+     "source": "bizalia",
+     "nuevos": 0,
      "duplicados": 0,
      "descartados": 0,
      "errores": 1,
