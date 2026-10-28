@@ -943,38 +943,17 @@
   "https://www.negociosenventa.es/venta-empresa-de-suplementos-nutricionales-alta-gama-en-girona-2881": {
    "reason": "busqueda",
    "date": "2026-10-27"
+  },
+  "https://www.bizalia.com/en-venta/111262/marca-de-fertilizantes-para-plantas-completamente-desarrollada-con-unas-65-referencias-sku": {
+   "reason": "extranjero",
+   "date": "2026-10-28"
+  },
+  "https://www.bizalia.com/en-venta/111271/complejo-turistico-con-camping-y-restauracion-en-brabante-incluye-inmuebles-terreno-en-propiedad-y-alojamientos": {
+   "reason": "extranjero",
+   "date": "2026-10-28"
   }
  },
  "runs": [
-  {
-   "at": "2026-10-15T11:31:52+00:00",
-   "stats": [
-    {
-     "source": "negociosenventa",
-     "nuevos": 57,
-     "duplicados": 0,
-     "descartados": 3,
-     "errores": 0,
-     "retirados": 0
-    },
-    {
-     "source": "bizalia",
-     "nuevos": 0,
-     "duplicados": 0,
-     "descartados": 0,
-     "errores": 1,
-     "retirados": 0
-    },
-    {
-     "source": "transmisionempresas",
-     "nuevos": 0,
-     "duplicados": 0,
-     "descartados": 0,
-     "errores": 0,
-     "retirados": 0
-    }
-   ]
-  },
   {
    "at": "2026-10-15T17:04:26+00:00",
    "stats": [
@@ -2383,6 +2362,35 @@
      "nuevos": 0,
      "duplicados": 0,
      "descartados": 0,
+     "errores": 1,
+     "retirados": 0
+    },
+    {
+     "source": "transmisionempresas",
+     "nuevos": 0,
+     "duplicados": 0,
+     "descartados": 0,
+     "errores": 0,
+     "retirados": 0
+    }
+   ]
+  },
+  {
+   "at": "2026-10-28T12:58:06+00:00",
+   "stats": [
+    {
+     "source": "negociosenventa",
+     "nuevos": 0,
+     "duplicados": 0,
+     "descartados": 0,
+     "errores": 0,
+     "retirados": 0
+    },
+    {
+     "source": "bizalia",
+     "nuevos": 1,
+     "duplicados": 0,
+     "descartados": 2,
      "errores": 1,
      "retirados": 0
     },
