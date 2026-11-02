@@ -5787,13 +5787,18 @@
   "source": "negociosenventa",
   "source_name": "NegociosEnVenta.es",
   "url": "https://www.negociosenventa.es/empresa-en-pleno-funcionamiento-en-madrid-5675",
-  "also_on": [],
+  "also_on": [
+   "https://www.bizalia.com/en-venta/111270/relevo-por-jubilacion-empresa-consolidada-de-refuerzo-educativo-y-extraescolares"
+  ],
   "first_seen": "2026-10-27",
   "last_checked": "2026-10-27",
   "status": "activo",
   "dedupe_key": "b800d99650f42ec8",
   "summary": "Venta de negocio de otros negocios en Madrid.",
-  "summary_source": "template"
+  "summary_source": "template",
+  "also_on_names": [
+   "Bizalia"
+  ]
  },
  {
   "id": "negociosenventa-1a3c43ce",
@@ -148949,13 +148954,18 @@
   "source": "bizalia",
   "source_name": "Bizalia",
   "url": "https://www.bizalia.com/en-venta/109882/empresa-reparacion-y-venta-telefonos-moviles",
-  "also_on": [],
+  "also_on": [
+   "https://www.bizalia.com/en-venta/111287/empresa-reparacion-y-venta-telefonos-moviles"
+  ],
   "first_seen": "2026-10-01",
-  "last_checked": "2026-10-01",
+  "last_checked": "2026-11-02",
   "status": "activo",
   "dedupe_key": "0f88e0aca28f8963",
   "summary": "Venta de negocio de otros negocios en Comunidad Valenciana. Precio desde 500.000 €. Facturación declarada: 1.000.000 €.",
-  "summary_source": "template"
+  "summary_source": "template",
+  "also_on_names": [
+   "Bizalia"
+  ]
  },
  {
   "id": "bizalia-a0375450",
@@ -156138,7 +156148,7 @@
   "url": "https://www.bizalia.com/en-venta/110343/venta-de-cartera-de-clientes-de-asesoria-en-madrid-mf",
   "also_on": [],
   "first_seen": "2026-09-30",
-  "last_checked": "2026-09-30",
+  "last_checked": "2026-11-02",
   "status": "activo",
   "dedupe_key": "0692195fd03de5e9",
   "summary": "Venta de negocio de servicios en Madrid. Precio desde 500.000 €. Facturación declarada: 500.000 €.",
