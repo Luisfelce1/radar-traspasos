@@ -112,6 +112,118 @@
   "summary_source": "template"
  },
  {
+  "id": "bizalia-a95563a7",
+  "slug": "empresa-de-limpieza-en-comunidad-valenciana-a95563a7",
+  "title": "Empresa de limpieza en Comunidad Valenciana",
+  "tipo": "venta",
+  "sector": "servicios",
+  "provincia": null,
+  "comunidad": null,
+  "ubicacion": null,
+  "municipio": null,
+  "precio": 100000,
+  "precio_max": 250000,
+  "facturacion": 100000,
+  "alquiler_mensual": null,
+  "superficie": null,
+  "empleados": "> 50",
+  "published": "2026-11-04",
+  "source": "bizalia",
+  "source_name": "Bizalia",
+  "url": "https://www.bizalia.com/en-venta/111305/empresa-de-limpieza-en-comunidad-valenciana",
+  "also_on": [],
+  "first_seen": "2026-11-04",
+  "last_checked": "2026-11-04",
+  "status": "activo",
+  "dedupe_key": "0ea616466ef3281b",
+  "summary": "Venta de negocio de servicios en España. Precio desde 100.000 €. Facturación declarada: 100.000 €.",
+  "summary_source": "template"
+ },
+ {
+  "id": "bizalia-3c577f86",
+  "slug": "hoteles-en-venta-en-ubicaciones-premium-en-espana-3c577f86",
+  "title": "Hoteles en Venta en ubicaciones premium en España",
+  "tipo": "venta",
+  "sector": "alojamiento",
+  "provincia": null,
+  "comunidad": null,
+  "ubicacion": null,
+  "municipio": null,
+  "precio": 4000000,
+  "precio_max": null,
+  "facturacion": 100000,
+  "alquiler_mensual": null,
+  "superficie": null,
+  "empleados": "> 50",
+  "published": "2026-11-04",
+  "source": "bizalia",
+  "source_name": "Bizalia",
+  "url": "https://www.bizalia.com/en-venta/111307/hoteles-en-venta-en-ubicaciones-premium-en-espana",
+  "also_on": [],
+  "first_seen": "2026-11-04",
+  "last_checked": "2026-11-04",
+  "status": "activo",
+  "dedupe_key": "99d5bdc7bc4d2fdb",
+  "summary": "Venta de negocio de hoteles y alojamiento en España. Precio desde 4.000.000 €. Facturación declarada: 100.000 €.",
+  "summary_source": "template"
+ },
+ {
+  "id": "bizalia-334e5a96",
+  "slug": "empresa-de-limpieza-baleares-334e5a96",
+  "title": "Empresa de limpieza - Baleares",
+  "tipo": "venta",
+  "sector": "servicios",
+  "provincia": null,
+  "comunidad": null,
+  "ubicacion": null,
+  "municipio": null,
+  "precio": 100000,
+  "precio_max": 250000,
+  "facturacion": null,
+  "alquiler_mensual": null,
+  "superficie": null,
+  "empleados": "0",
+  "published": "2026-11-04",
+  "source": "bizalia",
+  "source_name": "Bizalia",
+  "url": "https://www.bizalia.com/en-venta/111301/empresa-de-limpieza-baleares",
+  "also_on": [],
+  "first_seen": "2026-11-04",
+  "last_checked": "2026-11-04",
+  "status": "activo",
+  "dedupe_key": "a4ea604d4763e855",
+  "summary": "Venta de negocio de servicios en España. Precio desde 100.000 €.",
+  "summary_source": "template"
+ },
+ {
+  "id": "bizalia-0952ed13",
+  "slug": "restaurante-eixample-barcelona-0952ed13",
+  "title": "Restaurante - Eixample (Barcelona)",
+  "tipo": "venta",
+  "sector": "deporte-ocio",
+  "provincia": null,
+  "comunidad": null,
+  "ubicacion": null,
+  "municipio": null,
+  "precio": 500000,
+  "precio_max": 1000000,
+  "facturacion": null,
+  "alquiler_mensual": null,
+  "superficie": null,
+  "empleados": "0",
+  "published": "2026-11-04",
+  "source": "bizalia",
+  "source_name": "Bizalia",
+  "url": "https://www.bizalia.com/en-venta/111297/restaurante-eixample-barcelona",
+  "also_on": [],
+  "first_seen": "2026-11-04",
+  "last_checked": "2026-11-04",
+  "status": "activo",
+  "dedupe_key": "081d41af4c17c29c",
+  "summary": "Venta de negocio de deporte y ocio en España. Precio desde 500.000 €.",
+  "summary_source": "template"
+ },
+ {
   "id": "negociosenventa-9dc7ed29",
   "slug": "oficina-comercial-premium-totalmente-acondicionada-condado-d-9dc7ed29",
   "title": "OFICINA COMERCIAL PREMIUM TOTALMENTE ACONDICIONADA – CONDADO DE ALHAMA",
@@ -149469,13 +149581,18 @@
   "source": "bizalia",
   "source_name": "Bizalia",
   "url": "https://www.bizalia.com/en-venta/109743/empresa-de-cerramientos-de-aluminio-pvc",
-  "also_on": [],
+  "also_on": [
+   "https://www.bizalia.com/en-venta/111304/empresa-de-cerramientos-de-aluminio-pvc"
+  ],
   "first_seen": "2026-10-01",
-  "last_checked": "2026-10-01",
+  "last_checked": "2026-11-04",
   "status": "activo",
   "dedupe_key": "192d0f4e458a00fe",
   "summary": "Venta de negocio de industria y construcción en España. Precio desde 100.000 €.",
-  "summary_source": "template"
+  "summary_source": "template",
+  "also_on_names": [
+   "Bizalia"
+  ]
  },
  {
   "id": "bizalia-828de141",
@@ -149973,13 +150090,18 @@
   "source": "bizalia",
   "source_name": "Bizalia",
   "url": "https://www.bizalia.com/en-venta/109915/empresa-rehabilitacion-y-mantenimiento-edificios-en-barcelona",
-  "also_on": [],
+  "also_on": [
+   "https://www.bizalia.com/en-venta/111306/empresa-rehabilitacion-y-mantenimiento-edificios-en-barcelona"
+  ],
   "first_seen": "2026-10-01",
-  "last_checked": "2026-10-01",
+  "last_checked": "2026-11-04",
   "status": "activo",
   "dedupe_key": "f5642f05013efc43",
   "summary": "Venta de negocio de otros negocios en Barcelona. Precio desde 2.500.000 €. Facturación declarada: 5.000.000 €.",
-  "summary_source": "template"
+  "summary_source": "template",
+  "also_on_names": [
+   "Bizalia"
+  ]
  },
  {
   "id": "bizalia-3d8b9551",
@@ -150342,13 +150464,18 @@
   "source": "bizalia",
   "source_name": "Bizalia",
   "url": "https://www.bizalia.com/en-venta/109747/empresa-de-limpieza-madrid",
-  "also_on": [],
+  "also_on": [
+   "https://www.bizalia.com/en-venta/111299/empresa-de-limpieza-madrid"
+  ],
   "first_seen": "2026-10-01",
-  "last_checked": "2026-10-01",
+  "last_checked": "2026-11-04",
   "status": "activo",
   "dedupe_key": "ea390389be4eaf61",
   "summary": "Venta de negocio de servicios en España. Precio desde 500.000 €. Facturación declarada: 1.000.000 €.",
-  "summary_source": "template"
+  "summary_source": "template",
+  "also_on_names": [
+   "Bizalia"
+  ]
  },
  {
   "id": "bizalia-0f9d6894",
@@ -156399,13 +156526,18 @@
   "source": "bizalia",
   "source_name": "Bizalia",
   "url": "https://www.bizalia.com/en-venta/109748/hostal-restaurante-en-barcelona",
-  "also_on": [],
+  "also_on": [
+   "https://www.bizalia.com/en-venta/111298/hostal-restaurante-en-barcelona"
+  ],
   "first_seen": "2026-09-30",
-  "last_checked": "2026-09-30",
+  "last_checked": "2026-11-04",
   "status": "activo",
   "dedupe_key": "ff1e0810893a20ba",
   "summary": "Venta de negocio de deporte y ocio en Barcelona. Precio desde 1.000.000 €.",
-  "summary_source": "template"
+  "summary_source": "template",
+  "also_on_names": [
+   "Bizalia"
+  ]
  },
  {
   "id": "bizalia-b53c6d8d",
@@ -156483,13 +156615,18 @@
   "source": "bizalia",
   "source_name": "Bizalia",
   "url": "https://www.bizalia.com/en-venta/109745/empresa-de-limpieza-galicia",
-  "also_on": [],
+  "also_on": [
+   "https://www.bizalia.com/en-venta/111303/empresa-de-limpieza-galicia"
+  ],
   "first_seen": "2026-09-30",
-  "last_checked": "2026-09-30",
+  "last_checked": "2026-11-04",
   "status": "activo",
   "dedupe_key": "8ace5c7536fa45ea",
   "summary": "Venta de negocio de servicios en España. Precio desde 100.000 €.",
-  "summary_source": "template"
+  "summary_source": "template",
+  "also_on_names": [
+   "Bizalia"
+  ]
  },
  {
   "id": "bizalia-a047eacd",
@@ -156513,7 +156650,7 @@
   "url": "https://www.bizalia.com/en-venta/110971/venta-asesoria-contable-fiscal-y-laboral-en-madrid-al",
   "also_on": [],
   "first_seen": "2026-09-30",
-  "last_checked": "2026-11-03",
+  "last_checked": "2026-11-04",
   "status": "activo",
   "dedupe_key": "a24a667555469da8",
   "summary": "Venta de negocio de servicios en Madrid. Precio desde 250.000 €. Facturación declarada: 250.000 €.",
@@ -157157,7 +157294,7 @@
   "url": "https://www.bizalia.com/en-venta/110729/venta-cartera-de-clientes-de-limpieza-y-conserjeria-en-madrid-sm",
   "also_on": [],
   "first_seen": "2026-09-30",
-  "last_checked": "2026-11-03",
+  "last_checked": "2026-11-04",
   "status": "activo",
   "dedupe_key": "cb740d52d9e3ec0b",
   "summary": "Venta de negocio de servicios en Madrid. Precio desde 100.000 €. Facturación declarada: 250.000 €.",
