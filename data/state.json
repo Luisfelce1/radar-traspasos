@@ -955,38 +955,13 @@
   "https://www.negociosenventa.es/se-vende-tienda-online-de-energia-solar-facturacion-1-m-ultimos-12-meses-en-barcelona-12967": {
    "reason": "inmueble",
    "date": "2026-11-03"
+  },
+  "https://www.negociosenventa.es/socios-para-expansion-en-valenciavalencia-12980": {
+   "reason": "busqueda",
+   "date": "2026-11-04"
   }
  },
  "runs": [
-  {
-   "at": "2026-10-20T11:41:39+00:00",
-   "stats": [
-    {
-     "source": "negociosenventa",
-     "nuevos": 59,
-     "duplicados": 0,
-     "descartados": 1,
-     "errores": 0,
-     "retirados": 0
-    },
-    {
-     "source": "bizalia",
-     "nuevos": 0,
-     "duplicados": 0,
-     "descartados": 0,
-     "errores": 1,
-     "retirados": 0
-    },
-    {
-     "source": "transmisionempresas",
-     "nuevos": 0,
-     "duplicados": 0,
-     "descartados": 0,
-     "errores": 0,
-     "retirados": 0
-    }
-   ]
-  },
   {
    "at": "2026-10-20T17:08:45+00:00",
    "stats": [
@@ -2387,6 +2362,35 @@
      "nuevos": 0,
      "duplicados": 0,
      "descartados": 0,
+     "errores": 0,
+     "retirados": 0
+    },
+    {
+     "source": "bizalia",
+     "nuevos": 0,
+     "duplicados": 0,
+     "descartados": 0,
+     "errores": 1,
+     "retirados": 0
+    },
+    {
+     "source": "transmisionempresas",
+     "nuevos": 0,
+     "duplicados": 0,
+     "descartados": 0,
+     "errores": 0,
+     "retirados": 0
+    }
+   ]
+  },
+  {
+   "at": "2026-11-04T06:25:21+00:00",
+   "stats": [
+    {
+     "source": "negociosenventa",
+     "nuevos": 4,
+     "duplicados": 0,
+     "descartados": 1,
      "errores": 0,
      "retirados": 0
     },
