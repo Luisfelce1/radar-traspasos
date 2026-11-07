@@ -963,35 +963,6 @@
  },
  "runs": [
   {
-   "at": "2026-10-22T11:57:53+00:00",
-   "stats": [
-    {
-     "source": "negociosenventa",
-     "nuevos": 50,
-     "duplicados": 0,
-     "descartados": 10,
-     "errores": 0,
-     "retirados": 0
-    },
-    {
-     "source": "bizalia",
-     "nuevos": 0,
-     "duplicados": 0,
-     "descartados": 0,
-     "errores": 1,
-     "retirados": 0
-    },
-    {
-     "source": "transmisionempresas",
-     "nuevos": 0,
-     "duplicados": 0,
-     "descartados": 0,
-     "errores": 0,
-     "retirados": 0
-    }
-   ]
-  },
-  {
    "at": "2026-10-22T17:19:11+00:00",
    "stats": [
     {
@@ -2385,6 +2356,35 @@
   },
   {
    "at": "2026-11-07T13:04:27+00:00",
+   "stats": [
+    {
+     "source": "negociosenventa",
+     "nuevos": 0,
+     "duplicados": 0,
+     "descartados": 0,
+     "errores": 0,
+     "retirados": 0
+    },
+    {
+     "source": "bizalia",
+     "nuevos": 0,
+     "duplicados": 0,
+     "descartados": 0,
+     "errores": 1,
+     "retirados": 0
+    },
+    {
+     "source": "transmisionempresas",
+     "nuevos": 0,
+     "duplicados": 0,
+     "descartados": 0,
+     "errores": 0,
+     "retirados": 0
+    }
+   ]
+  },
+  {
+   "at": "2026-11-07T21:54:19+00:00",
    "stats": [
     {
      "source": "negociosenventa",
